@@ -6,3 +6,15 @@
   font-family: 'Poppins', sans-serif;
   color: #4A5859;
 }
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: text-decoration 1s;
+}
+
+a:hover {
+  text-decoration: underline #4A5859;
+}

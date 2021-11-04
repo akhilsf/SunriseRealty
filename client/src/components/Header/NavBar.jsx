@@ -1,40 +1,28 @@
 import React from 'react';
-import styled from 'styled-components';
 import {
   BrowserRouter as Router,
   // Switch,
   // Route,
-  Link,
+  NavLink,
 } from 'react-router-dom';
 
-const NavContainer = styled.nav`
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  margin-top: 80px;
-  margin-right: 100px;
-  white-space: nowrap;
-`;
-
-const LinkContainer = styled.div`
-  font-weight: 500;
-`;
+import { NavContainer } from './headerStyle';
 
 const NavBar = () => (
   <Router>
     <NavContainer>
-      <Link to="/" style={{ textDecoration: 'none', marginRight: '5px', marginLeft: '5px' }}>
-        <LinkContainer>Home</LinkContainer>
-      </Link>
-      <Link to="/about" style={{ textDecoration: 'none', marginRight: '5px', marginLeft: '5px' }}>
-        <LinkContainer>About</LinkContainer>
-      </Link>
-      <Link to="/strategy" style={{ textDecoration: 'none', marginRight: '5px', marginLeft: '5px' }}>
-        <LinkContainer>Strategy</LinkContainer>
-      </Link>
-      <Link to="/contact" style={{ textDecoration: 'none', marginRight: '5px', marginLeft: '5px' }}>
-        <LinkContainer>Contact Us</LinkContainer>
-      </Link>
+      <NavLink activeClassName="active" className="link" to="/">
+        HOME
+      </NavLink>
+      <NavLink activeClassName="active" className="link" to="/about">
+        ABOUT
+      </NavLink>
+      <NavLink activeClassName="active" className="link" to="/strategy">
+        STRATEGY
+      </NavLink>
+      <NavLink activeClassName="active" className="link" to="/contact">
+        Contact Us
+      </NavLink>
     </NavContainer>
     {/* <Switch>
       <Route path="/about">
