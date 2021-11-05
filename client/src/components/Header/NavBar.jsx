@@ -21,7 +21,7 @@ const NavBar = () => (
         STRATEGY
       </NavLink>
       <NavLink activeClassName="active" className="link" to="/contact">
-        Contact Us
+        CONTACT
       </NavLink>
     </NavContainer>
     {/* <Switch>

@@ -5,7 +5,7 @@ import { FooterContainer } from './footerStyle';
 
 const Footer = () => (
   <FooterContainer>
-    <Location />
+    {/* <Location /> */}
     <ContactUs />
   </FooterContainer>
 );

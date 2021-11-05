@@ -21,4 +21,5 @@ export const NavContainer = styled.nav`
   margin-top: 80px;
   margin-right: 100px;
   white-space: nowrap;
+  font-size: 20px;
 `;

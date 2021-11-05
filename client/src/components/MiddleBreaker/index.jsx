@@ -10,7 +10,7 @@ const MiddleBreakerContainer = styled.div`
 
 const MiddleBreaker = () => (
   <MiddleBreakerContainer>
-    <Picture />
+    {/* <Picture /> */}
     <TagLine />
   </MiddleBreakerContainer>
 );
