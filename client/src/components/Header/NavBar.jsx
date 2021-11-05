@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  // Switch,
-  // Route,
+  Switch,
+  Route,
   NavLink,
 } from 'react-router-dom';
-
+import About from '../pages/About/index';
 import { NavContainer } from './headerStyle';
 
 const NavBar = () => (

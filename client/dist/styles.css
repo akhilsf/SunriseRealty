@@ -10,9 +10,9 @@ a {
   text-decoration: none;
   margin-right: 5px;
   margin-left: 5px;
-  transition: text-decoration 1s;
+  /* transition: text-decoration 1s; */
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline #4A5859;
-}
+} */

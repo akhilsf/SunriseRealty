@@ -1,28 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
 import Header from './components/Header/index';
 import MiddleBreaker from './components/MiddleBreaker/index';
 import Footer from './components/Footer/index';
 
 const App = () => {
-  const [isMobile, SetIsMobile] = useState(false);
+  const [screenWidth, SetScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    if ($(window).width() < 560) {
-      SetIsMobile(true);
-    } else {
-      SetIsMobile(false);
-    }
-  }, [isMobile]);
+    const handleResize = () => SetScreenWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
-      <Header />
-      <MiddleBreaker />
+      <Header screenWidth={screenWidth} />
+      {/* <MiddleBreaker /> */}
       <Footer />
     </>
-  )
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById('app'));
