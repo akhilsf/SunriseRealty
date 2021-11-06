@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header/index';
-import MiddleBreaker from './components/MiddleBreaker/index';
+// import MiddleBreaker from './components/MiddleBreaker/index';
 import Footer from './components/Footer/index';
 
 const App = () => {
