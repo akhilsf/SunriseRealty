@@ -11,16 +11,8 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoPic = styled.img`
-  width: 200px;
+  max-width: 100%;
+  min-width: 10%;
+  width: auto;
   height: auto;
-`;
-
-export const NavContainer = styled.nav`
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  margin-top: 80px;
-  margin-right: 100px;
-  white-space: nowrap;
-  font-size: 20px;
 `;
