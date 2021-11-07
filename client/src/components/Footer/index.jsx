@@ -1,14 +1,17 @@
 import React from 'react';
-import { FooterContainer } from './footerStyle';
+import Logo from '../shared/Logo';
+import { FooterContainer, LinksContainer, Link } from './footerStyle';
 
 const Footer = () => (
   <FooterContainer>
-    <nav>
-      <a href="/home">Home</a>
-      <a href="/about">About</a>
-      <a href="/strategy">Strategy</a>
-      <a href="/contact">Contact</a>
-    </nav>
+    <Logo />
+    <LinksContainer>
+      <Link href="/home">HOME</Link>
+      <Link href="/about">ABOUT</Link>
+      <Link href="/strategy">STRATEGY</Link>
+      <Link href="/invest-with-us">INVEST WITH US</Link>
+      <Link href="/contact">CONTACT</Link>
+    </LinksContainer>
   </FooterContainer>
 );
 

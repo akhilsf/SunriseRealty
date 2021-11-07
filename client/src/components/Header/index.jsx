@@ -10,16 +10,16 @@ import Home from '../Pages/Home/index';
 import About from '../Pages/About/index';
 import Strategy from '../Pages/Strategy/index';
 import Contact from '../Pages/Contact/index';
-import Logo from './Logo';
+import Logo from '../shared/Logo';
 
 import { HeaderContainer, Hamburger, MenuLine } from './headerStyle';
 
 const FullScreenNav = {
   display: 'flex',
-  width: '50%',
+  width: '60%',
   justifyContent: 'space-between',
   marginTop: '80px',
-  marginRight: '100px',
+  marginRight: '5%',
   whiteSpace: 'nowrap',
   fontSize: '20px',
 };
@@ -58,7 +58,7 @@ const Header = ({ screenWidth }) => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   useEffect(() => {
-    if (screenWidth > 600) {
+    if (screenWidth > 1000) {
       setNavStyle(FullScreenNav);
       closeHamburger();
       setHamburgerOpen(false);
@@ -85,7 +85,13 @@ const Header = ({ screenWidth }) => {
   return (
     <Router>
       <HeaderContainer>
-        <Logo />
+        <Logo
+          style={{
+            position: 'fixed',
+            width: 'auto',
+            margin: 'auto',
+          }}
+        />
         <nav id="navbar" style={navStyle}>
           <NavLink
             activeClassName="active"
@@ -117,6 +123,15 @@ const Header = ({ screenWidth }) => {
           <NavLink
             activeClassName="active"
             className="link"
+            to="/invest-with-us"
+            style={{ marginTop: '0.5em' }}
+            onClick={hamburgerOpen ? handleLinkClick : undefined}
+          >
+            INVEST WITH US
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            className="link"
             to="/contact"
             style={{ marginTop: '0.5em' }}
             onClick={hamburgerOpen ? handleLinkClick : undefined}
@@ -126,7 +141,7 @@ const Header = ({ screenWidth }) => {
         </nav>
         <Hamburger
           onClick={handleHamburgerAction}
-          style={{ display: screenWidth > 600 ? 'none' : undefined }}
+          style={{ display: screenWidth > 1000 ? 'none' : undefined }}
         >
           <MenuLine id="ham1" style={{ width: '35px' }} />
           <MenuLine id="ham2" style={{ width: '25px', alignSelf: 'flex-end' }} />

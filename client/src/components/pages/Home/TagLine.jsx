@@ -9,7 +9,7 @@ const TagLineContainer = styled.div`
   padding: 50px;
   height: auto;
   width: 100%;
-  background-color: #F4B860;
+  background-color: #4A5859;
 `;
 const Text = styled.p`
   color: white;
