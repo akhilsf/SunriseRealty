@@ -7,7 +7,6 @@ export const HeaderContainer = styled.div`
   width: 100%;
   height: 140px;
   align-items: center;
-  margin-bottom: 10px;
   border-bottom: 1px solid rgba(200,200,200);
 `;
 

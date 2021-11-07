@@ -5,6 +5,11 @@
   color: #4A5859;
 }
 
+body {
+  overflow: scroll;
+
+}
+
 a {
   font-weight: 500;
   text-decoration: none;

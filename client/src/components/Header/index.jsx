@@ -28,7 +28,7 @@ const MinimizedNav = {
   display: 'flex',
   position: 'fixed',
   left: '-100%',
-  top: '145px',
+  top: '140px',
   flexDirection: 'column',
   backgroundColor: '#fff',
   width: '100%',
@@ -36,8 +36,7 @@ const MinimizedNav = {
   borderRadius: '10px',
   textAlign: 'center',
   transition: '0.3s',
-  boxShadow:
-      '0 10px 20px rgba(0, 0, 0, 0.05)',
+  boxShadow: '0 10px 20px rgba(0, 0, 0, 0.05)',
 };
 
 const openHamburger = () => {

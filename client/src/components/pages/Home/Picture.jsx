@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const PictureCover = styled.div`
   width: 100%;
-  background-image: url(assets/houses.png);
+  background-image: url(assets/houses.jpeg);
   height: 300px;
 `;
 
