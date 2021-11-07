@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const LogoPic = styled.img`
-  max-width: 220px;
   width: auto;
   height: auto;
 `;
 
-const Logo = () => (
-  <LogoPic src="assets/SR_logo.png" alt="Sunrise Realty Logo" />
-);
+const Logo = ({ screenWidth }) => {
+  const [logoWidth, setLogoWidth] = useState(() => {});
+
+  useEffect(() => {
+    if (screenWidth < 550) {
+      setLogoWidth(200);
+    } else {
+      setLogoWidth(400);
+    }
+  }, [screenWidth]);
+
+  return (
+    <LogoPic src="assets/SR_logo.png" alt="Sunrise Realty Logo" style={{ maxWidth: logoWidth }} />
+  );
+};
+
+Logo.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
+};
 
 export default Logo;

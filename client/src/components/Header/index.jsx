@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,27 +17,30 @@ import { HeaderContainer, Hamburger, MenuLine } from './headerStyle';
 
 const FullScreenNav = {
   display: 'flex',
-  width: '60%',
+  width: '30%',
   justifyContent: 'space-between',
   marginTop: '80px',
   marginRight: '5%',
+  marginLeft: '5%',
   whiteSpace: 'nowrap',
   fontSize: '20px',
 };
 
 const MinimizedNav = {
   display: 'flex',
-  position: 'fixed',
-  left: '-100%',
-  top: '140px',
   flexDirection: 'column',
+  justifyContent: 'space-around',
+  position: 'absolute',
+  left: '-100%',
+  top: '160px',
   backgroundColor: '#fff',
   width: '100%',
+  height: '12em',
   fontSize: '20px',
-  borderRadius: '10px',
+  paddingBottom: '10px',
   textAlign: 'center',
   transition: '0.3s',
-  boxShadow: '0 10px 20px rgba(0, 0, 0, 0.05)',
+  boxShadow: '0 0 5px rgba(0, 0, 0)',
 };
 
 const openHamburger = () => {
@@ -85,19 +89,11 @@ const Header = ({ screenWidth }) => {
   return (
     <Router>
       <HeaderContainer>
-        <Logo
-          style={{
-            position: 'fixed',
-            width: 'auto',
-            margin: 'auto',
-          }}
-        />
         <nav id="navbar" style={navStyle}>
           <NavLink
             activeClassName="active"
             className="link"
             to="/home"
-            style={{ marginTop: '0.5em' }}
             onClick={hamburgerOpen ? handleLinkClick : undefined}
           >
             HOME
@@ -106,7 +102,6 @@ const Header = ({ screenWidth }) => {
             activeClassName="active"
             className="link"
             to="/about"
-            style={{ marginTop: '0.5em' }}
             onClick={hamburgerOpen ? handleLinkClick : undefined}
           >
             ABOUT
@@ -115,7 +110,6 @@ const Header = ({ screenWidth }) => {
             activeClassName="active"
             className="link"
             to="/strategy"
-            style={{ marginTop: '0.5em' }}
             onClick={hamburgerOpen ? handleLinkClick : undefined}
           >
             STRATEGY
@@ -124,7 +118,7 @@ const Header = ({ screenWidth }) => {
             activeClassName="active"
             className="link"
             to="/invest-with-us"
-            style={{ marginTop: '0.5em' }}
+            style={{ display: hamburgerOpen ? undefined : 'none' }}
             onClick={hamburgerOpen ? handleLinkClick : undefined}
           >
             INVEST WITH US
@@ -133,7 +127,26 @@ const Header = ({ screenWidth }) => {
             activeClassName="active"
             className="link"
             to="/contact"
-            style={{ marginTop: '0.5em' }}
+            style={{ display: hamburgerOpen ? undefined : 'none' }}
+            onClick={hamburgerOpen ? handleLinkClick : undefined}
+          >
+            CONTACT
+          </NavLink>
+        </nav>
+        <Logo screenWidth={screenWidth} />
+        <nav id="navbar" style={navStyle}>
+          <NavLink
+            activeClassName="active"
+            className="link"
+            to="/invest-with-us"
+            onClick={hamburgerOpen ? handleLinkClick : undefined}
+          >
+            INVEST WITH US
+          </NavLink>
+          <NavLink
+            activeClassName="active"
+            className="link"
+            to="/contact"
             onClick={hamburgerOpen ? handleLinkClick : undefined}
           >
             CONTACT
@@ -156,6 +169,10 @@ const Header = ({ screenWidth }) => {
       </Switch>
     </Router>
   );
+};
+
+Header.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
 };
 
 export default Header;

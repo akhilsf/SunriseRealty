@@ -8,8 +8,10 @@ const TagLineContainer = styled.div`
   justify-content: center;
   padding: 50px;
   height: auto;
+  overflow: scroll;
   width: 100%;
-  background-color: #4A5859;
+  background-color: #424242;
+  box-shadow: inset 0 0 20px #000000;
 `;
 const Text = styled.p`
   color: white;
@@ -17,12 +19,19 @@ const Text = styled.p`
   marginRight: 5%;
 `;
 
-const tagLine = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
-
 const TagLine = () => (
   <TagLineContainer>
-    <Text style={{ fontSize: '24px' }}>Sunrise Realty</Text>
-    <Text>{tagLine}</Text>
+    <Text style={{
+      fontSize: '86px',
+      fontFamily: 'Zen Antique Soft, serif',
+    }}
+    >
+      The ability to invest
+      <br />
+      in real estate
+      <br />
+      without the hassle
+    </Text>
   </TagLineContainer>
 );
 

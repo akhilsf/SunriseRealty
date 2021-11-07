@@ -6,11 +6,12 @@ import TagLine from './TagLine';
 const MiddleBreakerContainer = styled.div`
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 `;
 
 const Home = () => (
   <MiddleBreakerContainer>
-    <Picture />
+    {/* <Picture /> */}
     <TagLine />
   </MiddleBreakerContainer>
 );
