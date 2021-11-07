@@ -16,3 +16,20 @@ export const LogoPic = styled.img`
   width: auto;
   height: auto;
 `;
+
+export const Hamburger = styled.button`
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+`;
+
+export const MenuLine = styled.span`
+  display: block;
+  height: 3px;
+  background-color: #4A5859;
+  margin: 3px 0;
+  transition: all 0.3s ease-in-out;
+`;

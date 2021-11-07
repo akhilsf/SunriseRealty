@@ -8,12 +8,16 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: DIST_DIR,
+    publicPath: '/',
   },
   resolve: {
     alias: {
       components: path.resolve(DIST_DIR, 'src/components'),
     },
     extensions: ['.js', '.jsx'],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   module: {
     rules: [
