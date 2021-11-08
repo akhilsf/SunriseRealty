@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
   display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
   flex-direction: column;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   height: auto;

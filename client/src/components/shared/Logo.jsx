@@ -19,7 +19,7 @@ const Logo = ({ screenWidth }) => {
   }, [screenWidth]);
 
   return (
-    <LogoPic src="assets/SR_logo.png" alt="Sunrise Realty Logo" style={{ maxWidth: logoWidth }} />
+    <LogoPic src="assets/SR_logo.jpeg" alt="Sunrise Realty Logo" style={{ maxWidth: logoWidth }} />
   );
 };
 

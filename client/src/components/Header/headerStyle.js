@@ -6,9 +6,8 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 160px;
+  height: 30vh;
   border-bottom: 1px solid rgba(200,200,200);
-  box-shadow: 0 10px rgba(0, 0, 0);
 `;
 
 export const Hamburger = styled.button`

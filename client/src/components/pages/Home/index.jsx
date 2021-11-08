@@ -1,19 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import Picture from './Picture';
 import TagLine from './TagLine';
+import MissionStatement from './MissionStatement';
+import LearnMore from './LearnMore';
+import Footer from '../../shared/Footer/index';
 
-const MiddleBreakerContainer = styled.div`
+const Contents = styled.div`
   display: flex;
   flex-direction: column;
   overflow: scroll;
 `;
 
 const Home = () => (
-  <MiddleBreakerContainer>
+  <Contents>
     {/* <Picture /> */}
     <TagLine />
-  </MiddleBreakerContainer>
+    <MissionStatement />
+    <LearnMore />
+    <Footer />
+  </Contents>
+
 );
 
 export default Home;

@@ -31,8 +31,8 @@ const MinimizedNav = {
   flexDirection: 'column',
   justifyContent: 'space-around',
   position: 'absolute',
-  left: '-100%',
-  top: '160px',
+  left: '-110%',
+  top: '30vh',
   backgroundColor: '#fff',
   width: '100%',
   height: '12em',
@@ -54,7 +54,7 @@ const closeHamburger = () => {
   document.getElementById('ham1').style.transform = '';
   document.getElementById('ham2').style.opacity = '100';
   document.getElementById('ham3').style.transform = '';
-  document.getElementById('navbar').style.left = '-100%';
+  document.getElementById('navbar').style.left = '-110%';
 };
 
 const Header = ({ screenWidth }) => {

@@ -14,7 +14,7 @@ const TagLineContainer = styled.div`
   box-shadow: inset 0 0 20px #000000;
 `;
 const Text = styled.p`
-  color: white;
+  color: rgb(231, 229, 222);
   marginLeft: 5%;
   marginRight: 5%;
 `;
