@@ -63,7 +63,7 @@ const LearnMore = () => (
   <Container>
     {/* <Image /> */}
     <Title>
-      What we do
+      WHAT WE DO
     </Title>
     <LineBreak />
     <Statement>

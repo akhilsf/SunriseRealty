@@ -93,7 +93,7 @@ const Header = ({ screenWidth }) => {
           <NavLink
             activeClassName="active"
             className="link"
-            to="/home"
+            to="/"
             onClick={hamburgerOpen ? handleLinkClick : undefined}
           >
             HOME
@@ -132,6 +132,15 @@ const Header = ({ screenWidth }) => {
           >
             CONTACT
           </NavLink>
+          <NavLink
+            activeClassName="active"
+            className="link"
+            to="/resources"
+            style={{ display: hamburgerOpen ? undefined : 'none' }}
+            onClick={hamburgerOpen ? handleLinkClick : undefined}
+          >
+            RESOURCES
+          </NavLink>
         </nav>
         <Logo screenWidth={screenWidth} />
         <nav id="navbar" style={navStyle}>
@@ -151,6 +160,14 @@ const Header = ({ screenWidth }) => {
           >
             CONTACT
           </NavLink>
+          <NavLink
+            activeClassName="active"
+            className="link"
+            to="/resources"
+            onClick={hamburgerOpen ? handleLinkClick : undefined}
+          >
+            RESOURCES
+          </NavLink>
         </nav>
         <Hamburger
           onClick={handleHamburgerAction}
@@ -162,10 +179,12 @@ const Header = ({ screenWidth }) => {
         </Hamburger>
       </HeaderContainer>
       <Switch>
-        <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/strategy" component={Strategy} />
+        <Route path="/invest-with-us" />
         <Route path="/contact" component={Contact} />
+        <Route path="/resources" />
+        <Route path="/" component={Home} />
       </Switch>
     </Router>
   );
