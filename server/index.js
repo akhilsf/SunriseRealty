@@ -7,9 +7,6 @@ const port = 8000;
 app.use('/', express.static('./client/dist'));
 
 app.get('/*', (req, res) => {
-  console.log(req.url);
-
-
   res.sendFile(path.join(__dirname, '..', 'client', 'dist', 'index.html'), (err) => {
     if (err) {
       res.status(500).send(err);

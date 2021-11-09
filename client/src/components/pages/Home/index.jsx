@@ -13,7 +13,6 @@ const Contents = styled.div`
 
 const Home = () => (
   <Contents>
-    {/* <Picture /> */}
     <TagLine />
     <MissionStatement />
     <LearnMore />

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const MissionContainer = styled.div`
   display: flex;
+  background-color: rgb(245, 245, 245);
   flex-direction: column;
   justify-content: center;
   padding: 5%;
@@ -32,6 +33,25 @@ const Statement = styled.p`
   text-align: center;
 `;
 
+const About = styled.a`
+  border: 3px solid #4A5859;
+  margin-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #4A5859;
+    color: white;
+  }
+
+`;
+
 const MissionStatement = () => (
   <MissionContainer>
     <Title>MISSION STATEMENT</Title>
@@ -39,6 +59,9 @@ const MissionStatement = () => (
     <Statement>
       This is the mission statement. It&apos;s really good and people will like it.
     </Statement>
+    <About href="/about">
+      About Us
+    </About>
   </MissionContainer>
 );
 
