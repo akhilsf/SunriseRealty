@@ -16,7 +16,8 @@ export const FooterContainer = styled.div`
 
 export const LinksContainer = styled.nav`
   display: flex;
-  width: 80%;
+  flex-wrap: wrap;
+  width: 90%;
   justify-content: center;
 `;
 
