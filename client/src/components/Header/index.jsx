@@ -18,7 +18,7 @@ import { HeaderContainer, Hamburger, MenuLine } from './headerStyle';
 const FullScreenNav = {
   display: 'flex',
   width: '30%',
-  justifyContent: 'space-between',
+  justifyContent: 'space-evenly',
   marginTop: '80px',
   marginRight: '5%',
   marginLeft: '5%',

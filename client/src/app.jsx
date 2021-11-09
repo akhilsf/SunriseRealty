@@ -14,11 +14,7 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      <Header screenWidth={screenWidth} />
-      {/* <MiddleBreaker /> */}
-      {/* <Footer /> */}
-    </>
+    <Header screenWidth={screenWidth} />
   );
 };
 
