@@ -7,11 +7,11 @@ import {
   NavLink,
 } from 'react-router-dom';
 
-import Home from '../Pages/Home/index.jsx';
-import About from '../Pages/About/index.jsx';
-import Strategy from '../Pages/Strategy/index.jsx';
-import Contact from '../Pages/Contact/index.jsx';
-import Logo from '../shared/Logo.jsx';
+// import Home from '../Pages/Home/index';
+// import About from '../Pages/About/index';
+// import Strategy from '../Pages/Strategy/index';
+// import Contact from '../Pages/Contact/index';
+import Logo from '../shared/Logo';
 
 import { HeaderContainer, Hamburger, MenuLine } from './headerStyle';
 
@@ -179,14 +179,14 @@ const Header = ({ screenWidth }) => {
         </Hamburger>
       </HeaderContainer>
       <Switch>
-        <Route path="/about">
+        {/* <Route path="/about">
           <About />
         </Route>
         <Route path="/strategy" component={Strategy} />
         <Route path="/invest-with-us" />
         <Route path="/contact" component={Contact} />
         <Route path="/resources" />
-        <Route path="/" component={Home} />
+        <Route path="/" component={Home} /> */}
       </Switch>
     </Router>
   );
