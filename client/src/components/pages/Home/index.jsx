@@ -11,9 +11,9 @@ const Contents = styled.div`
   overflow: scroll;
 `;
 
-const Home = () => (
+const Home = ({ screenWidth }) => (
   <Contents>
-    <TagLine />
+    <TagLine screenWidth={screenWidth} />
     <MissionStatement />
     <LearnMore />
     <Footer />

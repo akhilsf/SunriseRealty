@@ -57,7 +57,7 @@ const Form = ({ screenWidth }) => (
     </LeftSideContainer>
     <Questionnaire style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
       <InputField>
-        <label htmlFor="Name" style={{ display: 'block' }}>FIRST NAME</label>
+        <label htmlFor="Name" style={{ display: 'block' }}>FULL NAME</label>
         <input type="text" name="name" id="name" required />
       </InputField>
       <InputField>

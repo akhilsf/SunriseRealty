@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Pic = styled.img`
   display: block;
   margin-right: 20px;
+  margin-left: 20px;
 `;
 
 const MemberPicture = ({ shortID }) => (

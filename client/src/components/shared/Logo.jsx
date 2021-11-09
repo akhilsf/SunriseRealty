@@ -12,7 +12,9 @@ const Logo = ({ screenWidth }) => {
 
   useEffect(() => {
     if (screenWidth < 550) {
-      setLogoWidth(200);
+      setLogoWidth(200)
+    } else if (screenWidth < 750) {
+      setLogoWidth(250);
     } else {
       setLogoWidth(400);
     }

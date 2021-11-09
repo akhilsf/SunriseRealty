@@ -12,6 +12,14 @@ const Container = styled.div`
   box-shadow: inset 0 0 20px #000000;
 `;
 
+const LineBreak = styled.span`
+  display: block;
+  width: 80%;
+  height: 1px;
+  margin: 10px;
+  background-color: rgba(200, 200, 200);
+`
+
 const bios = [
   {
     shortID: 'anish',
@@ -33,10 +41,14 @@ const bios = [
   },
 ];
 
-const BioFeed = () => (
+const BioFeed = ({ screenWidth }) => (
   <Container>
+    <LineBreak />
     {bios.map((bio) => (
-      <BioCard shortID={bio.shortID} name={bio.name} title={bio.title} bio={bio.bio} />
+      <>
+        <BioCard shortID={bio.shortID} name={bio.name} title={bio.title} bio={bio.bio} screenWidth={screenWidth} />
+        <LineBreak />
+      </>
     ))}
   </Container>
 );

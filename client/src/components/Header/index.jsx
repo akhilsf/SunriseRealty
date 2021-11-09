@@ -63,7 +63,7 @@ const Header = ({ screenWidth }) => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   useEffect(() => {
-    if (screenWidth > 1000) {
+    if (screenWidth > 1400) {
       setNavStyle(FullScreenNav);
       closeHamburger();
       setHamburgerOpen(false);
@@ -172,7 +172,7 @@ const Header = ({ screenWidth }) => {
         </nav>
         <Hamburger
           onClick={handleHamburgerAction}
-          style={{ display: screenWidth > 1000 ? 'none' : undefined }}
+          style={{ display: screenWidth > 1400 ? 'none' : undefined }}
         >
           <MenuLine id="ham1" style={{ width: '35px' }} />
           <MenuLine id="ham2" style={{ width: '25px', alignSelf: 'flex-end' }} />
@@ -180,7 +180,9 @@ const Header = ({ screenWidth }) => {
         </Hamburger>
       </HeaderContainer>
       <Switch>
-        <Route path="/about" component={About} />
+        <Route path="/about">
+          <About screenWidth={screenWidth} />
+        </Route>
         <Route path="/strategy" component={Strategy} />
         <Route path="/invest-with-us">
           <InvestWithUs screenWidth={screenWidth} />
@@ -189,7 +191,9 @@ const Header = ({ screenWidth }) => {
           <Contact screenWidth={screenWidth} />
         </Route>
         <Route path="/resources" />
-        <Route path="/" component={Home} />
+        <Route path="/">
+          <Home screenWidth={screenWidth} />
+        </Route>
       </Switch>
     </Router>
   );

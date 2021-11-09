@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SubHeader from '../../shared/SubHeader';
 import BioFeed from './BioFeed';
+import Links from './Links';
 import Footer from '../../shared/Footer/index';
 
 const Contents = styled.div`
@@ -10,10 +11,11 @@ const Contents = styled.div`
   overflow: scroll;
 `;
 
-const About = () => (
+const About = ({ screenWidth }) => (
   <Contents>
     <SubHeader title="About Us" />
-    <BioFeed />
+    <BioFeed screenWidth={screenWidth} />
+    <Links />
     <Footer />
   </Contents>
 );

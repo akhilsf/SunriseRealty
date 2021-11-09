@@ -5,20 +5,23 @@ import MemberPicture from './MemberPicture';
 import BioDetails from './BioDetails';
 
 const Container = styled.div`
-  width: 60%;
+  width: 100%;
   display: flex;
   margin: 70px;
   justify-content: center;
   height: 50vh;
-  overflow: wrap;
+  // overflow: wrap;
 `;
 
 const BioCard = ({
-  shortID, name, title, bio,
+  shortID, name, title, bio, screenWidth
 }) => (
-  <Container>
+  <Container style={{
+    flexDirection: screenWidth < 1000 ? 'column' : undefined,
+    alignItems: screenWidth < 1000 ? 'center' : undefined,
+  }}>
     <MemberPicture shortID={shortID} />
-    <BioDetails name={name} title={title} bio={bio} />
+    <BioDetails name={name} title={title} bio={bio} screenWidth={screenWidth} />
   </Container>
 );
 

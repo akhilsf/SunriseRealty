@@ -1,17 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const MissionContainer = styled.div`
+const Container = styled.div`
   display: flex;
-  background-color: rgb(245, 245, 245);
   flex-direction: column;
   justify-content: center;
-  padding: 5%;
   align-items: center;
-  border-bottom: 1px solid rgba(200,200,200);
+  background-image: url(assets/white-lines.jpeg);
+  background-color: rgb(231, 229, 222);
+  background-size: cover;
+  padding: 5%;
   height: 400px;
 `;
 
+// const Image = styled.img`
+//   width: 30%;
+//   background-image: url(assets/white-lines.jpeg);
+//   height:
+// `;
 
 const Title = styled.h3`
   display: block;
@@ -34,9 +40,10 @@ const Statement = styled.p`
   text-align: center;
 `;
 
-const About = styled.a`
+const Button = styled.a`
   border: 3px solid #4A5859;
-  margin-top: 60px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 15px;
@@ -50,20 +57,23 @@ const About = styled.a`
     background-color: #4A5859;
     color: white;
   }
-
 `;
 
-const MissionStatement = () => (
-  <MissionContainer>
-    <Title>MISSION STATEMENT</Title>
-    <LineBreak />
+const Links = () => (
+  <Container>
     <Statement>
-      This is the mission statement. It&apos;s really good and people will like it.
+      Interested in investing with us?
     </Statement>
-    <About href="/about">
-      About Us
-    </About>
-  </MissionContainer>
+    <Button href="/invest-with-us">
+      INVEST WITH US
+    </Button>
+    <Statement>
+      General inquiries?
+    </Statement>
+    <Button href="/contact">
+      CONTACT US
+    </Button>
+  </Container>
 );
 
-export default MissionStatement;
+export default Links;

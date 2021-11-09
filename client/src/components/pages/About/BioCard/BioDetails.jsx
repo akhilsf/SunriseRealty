@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  // width: 80%;
 `;
 
 const Name = styled.h2`
@@ -24,12 +24,19 @@ const Bio = styled.p`
   color: white;
 `;
 
-const BioDetails = ({ name, title, bio }) => (
+const BioDetails = ({ name, title, bio, screenWidth }) => (
   <Container>
-    <Name>{name}</Name>
-    <Title>{title}</Title>
+    <Name style={{
+      textAlign: screenWidth < 1000 ? 'center' : undefined
+    }}
+    >{name}</Name>
+    <Title style={{
+      textAlign: screenWidth < 1000 ? 'center' : undefined
+    }}>{title}</Title>
     <br />
-    <Bio>{bio}</Bio>
+    <Bio style={{
+      textAlign: screenWidth < 1000 ? 'center' : undefined
+    }}>{bio}</Bio>
   </Container>
 );
 
