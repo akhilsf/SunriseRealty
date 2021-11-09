@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import SubHeader from '../../shared/SubHeader';
-import BioFeed from './BioFeed';
-import Links from './Links';
-import WhoWeAre from './WhoWeAre';
+import FAQs from './FAQs';
 import Footer from '../../shared/Footer/index';
 
 const Contents = styled.div`
@@ -12,14 +10,12 @@ const Contents = styled.div`
   overflow: scroll;
 `;
 
-const About = ({ screenWidth }) => (
+const Resources = () => (
   <Contents>
-    <SubHeader title="About Us" />
-    <WhoWeAre />
-    <BioFeed screenWidth={screenWidth} />
-    <Links />
+    <SubHeader title="Frequently Asked Questions" />
+    <FAQs />
     <Footer />
   </Contents>
 );
 
-export default About;
+export default Resources;

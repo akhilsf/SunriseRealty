@@ -25,7 +25,7 @@ const Pic = styled.img`
 `
 
 const Text = styled.p`
-  color: rgb(231, 229, 222);
+  color: #E1D9D1;
   marginLeft: 5%;
   marginRight: 5%;
 `;

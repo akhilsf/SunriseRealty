@@ -10,7 +10,6 @@ const Container = styled.div`
   margin: 70px;
   justify-content: center;
   height: 50vh;
-  // overflow: wrap;
 `;
 
 const BioCard = ({

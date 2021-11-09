@@ -5,11 +5,10 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  // width: 80%;
 `;
 
 const Name = styled.h2`
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: white;
   font-size: 3em;
 `;

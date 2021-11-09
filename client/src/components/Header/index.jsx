@@ -12,6 +12,7 @@ import About from '../Pages/About/index';
 import Strategy from '../Pages/Strategy/index';
 import InvestWithUs from '../Pages/InvestWithUs/index';
 import Contact from '../Pages/Contact/index';
+import Resources from '../Pages/Resources/index';
 import Logo from '../shared/Logo';
 
 import { HeaderContainer, Hamburger, MenuLine } from './headerStyle';
@@ -183,14 +184,18 @@ const Header = ({ screenWidth }) => {
         <Route path="/about">
           <About screenWidth={screenWidth} />
         </Route>
-        <Route path="/strategy" component={Strategy} />
+        <Route path="/strategy" >
+          <Strategy />
+        </Route>
         <Route path="/invest-with-us">
           <InvestWithUs screenWidth={screenWidth} />
         </Route>
         <Route path="/contact" >
           <Contact screenWidth={screenWidth} />
         </Route>
-        <Route path="/resources" />
+        <Route path="/resources" >
+          <Resources />
+        </Route>
         <Route path="/">
           <Home screenWidth={screenWidth} />
         </Route>

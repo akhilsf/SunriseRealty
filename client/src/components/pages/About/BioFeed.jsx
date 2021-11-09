@@ -18,7 +18,7 @@ const LineBreak = styled.span`
   height: 1px;
   margin: clamp(10px, 5%, 20px);
   background-color: rgba(200, 200, 200);
-`
+`;
 
 const bios = [
   {
