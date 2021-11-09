@@ -7,11 +7,11 @@ import {
   NavLink,
 } from 'react-router-dom';
 
-import Home from '../Pages/Home/index';
-import About from '../Pages/About/index';
-import Strategy from '../Pages/Strategy/index';
-import Contact from '../Pages/Contact/index';
-import Logo from '../shared/Logo';
+import Home from '../Pages/Home/index.jsx';
+import About from '../Pages/About/index.jsx';
+import Strategy from '../Pages/Strategy/index.jsx';
+import Contact from '../Pages/Contact/index.jsx';
+import Logo from '../shared/Logo.jsx';
 
 import { HeaderContainer, Hamburger, MenuLine } from './headerStyle';
 
