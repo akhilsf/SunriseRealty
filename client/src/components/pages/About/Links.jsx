@@ -61,7 +61,7 @@ const Button = styled.a`
 
 const Links = () => (
   <Container>
-    <Statement>
+    <Statement style={{ marginTop: '50px' }}>
       Interested in investing with us?
     </Statement>
     <Button href="/invest-with-us">

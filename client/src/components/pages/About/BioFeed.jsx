@@ -14,9 +14,9 @@ const Container = styled.div`
 
 const LineBreak = styled.span`
   display: block;
-  width: 80%;
+  width: 90%;
   height: 1px;
-  margin: 10px;
+  margin: clamp(10px, 5%, 20px);
   background-color: rgba(200, 200, 200);
 `
 

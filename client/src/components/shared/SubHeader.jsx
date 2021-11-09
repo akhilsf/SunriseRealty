@@ -8,7 +8,7 @@ const Container = styled.h2`
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid rgba(200,200,200);
-  height: 3em;
+  height: 5em;
 `;
 
 const SubHeader = ({ title }) => (

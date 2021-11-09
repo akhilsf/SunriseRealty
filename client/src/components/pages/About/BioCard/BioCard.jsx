@@ -20,7 +20,7 @@ const BioCard = ({
     flexDirection: screenWidth < 1000 ? 'column' : undefined,
     alignItems: screenWidth < 1000 ? 'center' : undefined,
   }}>
-    <MemberPicture shortID={shortID} />
+    <MemberPicture shortID={shortID} screenWidth={screenWidth} />
     <BioDetails name={name} title={title} bio={bio} screenWidth={screenWidth} />
   </Container>
 );
