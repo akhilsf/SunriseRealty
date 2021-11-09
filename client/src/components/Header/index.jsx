@@ -179,7 +179,9 @@ const Header = ({ screenWidth }) => {
         </Hamburger>
       </HeaderContainer>
       <Switch>
-        <Route path="/about" component={About} />
+        <Route path="/about">
+          <About />
+        </Route>
         <Route path="/strategy" component={Strategy} />
         <Route path="/invest-with-us" />
         <Route path="/contact" component={Contact} />
