@@ -185,7 +185,9 @@ const Header = ({ screenWidth }) => {
         <Route path="/invest-with-us">
           <InvestWithUs screenWidth={screenWidth} />
         </Route>
-        <Route path="/contact" component={Contact} />
+        <Route path="/contact" >
+          <Contact screenWidth={screenWidth} />
+        </Route>
         <Route path="/resources" />
         <Route path="/" component={Home} />
       </Switch>
