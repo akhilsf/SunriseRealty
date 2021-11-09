@@ -17,7 +17,7 @@ const Footer = () => {
         <Link href="/resources">RESOURCES</Link>
       </LinksContainer>
     </FooterContainer>
-  )
+  );
 };
 
 export default Footer;

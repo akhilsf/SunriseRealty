@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -8,8 +9,9 @@ const Container = styled.div`
 `;
 
 const Name = styled.h2`
-color: white;
-font-size: 3em;
+  text-transform: capitalize;
+  color: white;
+  font-size: 3em;
 `;
 
 const Title = styled.h4`
@@ -18,17 +20,23 @@ const Title = styled.h4`
 `;
 
 const Bio = styled.p`
-font-size: 1.2em;
-color: white;
+  font-size: 1.2em;
+  color: white;
 `;
 
-const BioDetails = ({ name, bio }) => (
+const BioDetails = ({ name, title, bio }) => (
   <Container>
-    <Name>ANISH PATEL</Name>
-    <Title>Partner, Sunrise Realty Investments</Title>
+    <Name>{name}</Name>
+    <Title>{title}</Title>
     <br />
-    <Bio>This is my bio. People will think it's really interesting</Bio>
+    <Bio>{bio}</Bio>
   </Container>
 );
+
+BioDetails.propTypes = {
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  bio: PropTypes.string.isRequired,
+};
 
 export default BioDetails;

@@ -56,7 +56,6 @@ const More = styled.a`
     background-color: #4A5859;
     color: white;
   }
-
 `;
 
 const LearnMore = () => (

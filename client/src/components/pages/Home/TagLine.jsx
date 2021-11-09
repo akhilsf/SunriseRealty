@@ -15,6 +15,7 @@ const TagLineContainer = styled.div`
 `;
 const Text = styled.p`
   color: rgb(231, 229, 222);
+  text-align: center;
   marginLeft: 5%;
   marginRight: 5%;
 `;

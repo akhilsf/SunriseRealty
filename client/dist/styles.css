@@ -21,3 +21,30 @@ a:hover {
   font-weight: 700;
   color: #748a8b;
 }
+
+input {
+  height: 3em;
+  width: 93%;
+  outline: none;
+  padding: 5px;
+  border: 1px solid rgb(200, 200, 200);
+  font-size: 1.2em;
+}
+
+textarea {
+  height: 6em;
+  width: 93%;
+  outline: none;
+  padding: 5px;
+  border: 1px solid rgb(200, 200, 200);
+  font-size: 1.2em;
+}
+
+select {
+  height: 3em;
+  width: 95%;
+  outline: none;
+  padding: 5px;
+  border: 1px solid rgb(200, 200, 200);
+  font-size: 1.2em;
+}
