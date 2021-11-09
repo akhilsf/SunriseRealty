@@ -10,7 +10,7 @@ const Container = styled.div`
   background-color: rgb(231, 229, 222);
   background-size: cover;
   padding: 5%;
-  height: 40vh;
+  height: 400px;
 `;
 
 // const Image = styled.img`

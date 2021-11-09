@@ -3,13 +3,15 @@ import styled from 'styled-components';
 
 const MissionContainer = styled.div`
   display: flex;
+  flex-grow: 1;
   background-color: rgb(245, 245, 245);
   flex-direction: column;
   justify-content: center;
+  overflow: scroll;
   padding: 5%;
   align-items: center;
   border-bottom: 1px solid rgba(200,200,200);
-  height: 40vh;
+  height: 400px;
 `;
 
 const Title = styled.h3`

@@ -22,7 +22,7 @@ const Text = styled.p`
 const TagLine = () => (
   <TagLineContainer>
     <Text style={{
-      fontSize: '86px',
+      fontSize: 'clamp(30px, 8vw, 84px)',
       fontFamily: 'Zen Antique Soft, serif',
     }}
     >
