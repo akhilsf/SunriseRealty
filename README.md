@@ -45,7 +45,7 @@ $ git clone https://github.com/akhilsf/SunriseRealty.git
 
 #### Go into the repository
 ```
-$ cd Marketscope
+$ cd SunriseRealty
 ```
 
 #### Install dependencies
