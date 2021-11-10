@@ -4,6 +4,7 @@
 
 <p align="center">
 Professional website to showcase Sunrise Realty Investment's business and serve as a hub for investors to contact Sunrise Realty
+  (NOTE: STILL IN PRODUCTION)
 </p>
 
 ![Screen Shot 2021-11-10 at 12 27 46 PM](https://user-images.githubusercontent.com/81180232/141188451-c0a08fc6-a54a-47fc-9617-51f357667991.png)
