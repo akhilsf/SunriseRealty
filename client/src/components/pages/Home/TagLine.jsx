@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  // box-shadow: inset 0 0 20px #000000;
+  box-shadow: inset 0 0 20px #000000;
 `
 
 const TagLineContainer = styled.div`
@@ -13,7 +13,7 @@ const TagLineContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 50px;
-  height: auto;ß
+  height: auto;
   width: 100%;
   background-color: #424242;
   box-shadow: inset 0 0 20px #000000;
