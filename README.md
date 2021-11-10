@@ -27,6 +27,12 @@ Professional website to showcase Sunrise Realty Investment's business and serve 
 * Contact Us 
 * Resources (FAQs)  
 
+## Tech Stack
+* JavaScript
+* ReactJS
+* HTML
+* CSS
+* Node.js
 
 ## How To Use
 Visit here: https://heuristic-mcclintock-0931d4.netlify.app/
