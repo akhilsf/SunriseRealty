@@ -34,7 +34,7 @@ const MinimizedNav = {
   justifyContent: 'space-around',
   position: 'absolute',
   left: '-110%',
-  top: '30vh',
+  top: '20vh',
   backgroundColor: '#fff',
   width: '100%',
   height: '12em',

@@ -30,25 +30,36 @@ const Text = styled.p`
   marginRight: 5%;
 `;
 
-const TagLine = ({ screenWidth }) => (
-  <Container style={{
-    flexDirection: screenWidth < 1000 ? 'column' : undefined,
-  }}>
-    <TagLineContainer>
-      <Text style={{
-        fontSize: 'clamp(30px, 6vw, 60px)',
-        fontFamily: 'Zen Antique Soft, serif',
-      }}
-      >
-        Time tested asset class.
-        <br />
-        Disciplined approach.
-      </Text>
-    </TagLineContainer>
-    <Pic src='assets/homePhoto.jpeg' style={{
-      width: screenWidth < 1000 ? undefined : '50%',
-    }}/>
-  </Container>
-);
+const TagLine = ({ screenWidth }) => {
+  const getHeight = () => {
+    if (document.getElementById('taglineContainer')) {
+      return document.getElementById('taglineContainer').offsetHeight;
+    }
+  }
+
+  getHeight();
+
+  return (
+    <Container style={{
+      flexDirection: screenWidth < 1000 ? 'column' : undefined,
+    }}>
+      <TagLineContainer id="taglineContainer">
+        <Text style={{
+          fontSize: 'clamp(30px, 6vw, 60px)',
+          fontFamily: 'Zen Antique Soft, serif',
+        }}
+        >
+          Time tested asset class.
+          <br />
+          Disciplined approach.
+        </Text>
+      </TagLineContainer>
+      <Pic src='assets/homePhoto.jpeg' style={{
+        width: screenWidth < 1000 ? undefined : '50%',
+        height: getHeight(),
+      }}/>
+    </Container>
+  );
+};
 
 export default TagLine;

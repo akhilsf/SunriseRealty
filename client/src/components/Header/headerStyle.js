@@ -2,12 +2,15 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
   display: flex;
+  background-color: white;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   border-bottom: 1px solid rgba(200,200,200);
+  position: fixed;
+  top: 0px;
 `;
 
 export const Hamburger = styled.button`
