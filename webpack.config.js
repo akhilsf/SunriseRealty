@@ -14,7 +14,7 @@ module.exports = {
     alias: {
       components: path.resolve(DIST_DIR, 'src/components'),
     },
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.json'],
     modules: ['client', 'node_modules']
   },
   devServer: {
