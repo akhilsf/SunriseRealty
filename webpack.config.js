@@ -15,6 +15,7 @@ module.exports = {
       components: path.resolve(DIST_DIR, 'src/components'),
     },
     extensions: ['.js', '.jsx'],
+    modules: ['client', 'node_modules']
   },
   devServer: {
     historyApiFallback: true,
