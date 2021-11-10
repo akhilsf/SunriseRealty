@@ -4,7 +4,7 @@ const SRC_DIR = path.join(__dirname, '/client/src');
 const DIST_DIR = path.join(__dirname, '/client/dist');
 
 module.exports = {
-  entry: `${SRC_DIR}/app.jsx`,
+  entry: `./client/src/app.jsx`,
   output: {
     filename: 'bundle.js',
     path: DIST_DIR,
@@ -12,7 +12,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      components: path.resolve(DIST_DIR, 'src/components'),
+      components: path.resolve('./client/src/components'),
     },
     extensions: ['.js', '.jsx', '.json'],
     modules: ['client', 'node_modules']
