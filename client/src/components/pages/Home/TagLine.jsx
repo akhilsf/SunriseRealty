@@ -56,7 +56,7 @@ const TagLine = ({ screenWidth }) => {
       </TagLineContainer>
       <Pic src='assets/homePhoto.jpeg' style={{
         width: screenWidth < 1000 ? undefined : '50%',
-        height: getHeight(),
+        height: screenWidth < 1000 ? '200px' : undefined,
       }}/>
     </Container>
   );
