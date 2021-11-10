@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import Header from './components/Header/index';
+import Header from './components/header/index';
 
 const App = () => {
   const [screenWidth, SetScreenWidth] = useState(window.innerWidth);
