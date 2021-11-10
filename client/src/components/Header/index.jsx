@@ -7,12 +7,12 @@ import {
   NavLink,
 } from 'react-router-dom';
 
-import Home from '../Pages/Home/index';
-import About from '../Pages/About/index';
-import Strategy from '../Pages/Strategy/index';
-import InvestWithUs from '../Pages/InvestWithUs/index';
-import Contact from '../Pages/Contact/index';
-import Resources from '../Pages/Resources/index';
+import Home from '../pages/Home/index';
+import About from '../pages/About/index';
+import Strategy from '../pages/Strategy/index';
+import InvestWithUs from '../pages/InvestWithUs/index';
+import Contact from '../pages/Contact/index';
+import Resources from '../pages/Resources/index';
 import Logo from '../shared/Logo';
 
 import { HeaderContainer, Hamburger, MenuLine } from './headerStyle';
