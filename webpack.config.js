@@ -12,7 +12,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      components: path.resolve('./client/src/components'),
+      components: './client/src/components',
     },
     extensions: ['.js', '.jsx', '.json'],
     modules: ['client', 'node_modules']
