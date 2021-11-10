@@ -22,8 +22,7 @@ const StepContainer = styled.div`
 `;
 
 const StepTitle = styled.h1`
-  color: #E1D9D1;
-  opacity: 0.3;
+  color: rgb(115, 107, 99);
   width: 50%;
   text-align: left;
   font-size: clamp(86px, 12vw, 128px);

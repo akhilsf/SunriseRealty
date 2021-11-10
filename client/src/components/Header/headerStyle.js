@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   border-bottom: 1px solid rgba(200,200,200);
   position: fixed;
   top: 0px;
