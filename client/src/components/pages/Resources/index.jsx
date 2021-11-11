@@ -7,7 +7,6 @@ import Footer from '../../shared/Footer/index';
 const Contents = styled.div`
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 `;
 
 const Resources = () => (

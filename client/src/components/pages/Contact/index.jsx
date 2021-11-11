@@ -7,7 +7,6 @@ import Form from './Form';
 const Contents = styled.div`
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 `;
 
 const Contact = ({ screenWidth }) => (

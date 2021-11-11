@@ -8,7 +8,6 @@ import StepByStep from './StepByStep';
 const Contents = styled.div`
   display: flex;
   flex-direction: column;
-  overflow: scroll;
 `;
 
 const Strategy = ({ screenWidth }) => (
