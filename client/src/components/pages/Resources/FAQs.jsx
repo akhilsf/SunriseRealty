@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.main`
-  background-color: #424242;
+  background-color: #002039;
   padding: 5%;
   display: flex;
   flex-direction: column;

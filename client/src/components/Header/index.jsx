@@ -144,7 +144,9 @@ const Header = ({ screenWidth }) => {
             RESOURCES
           </NavLink>
         </nav>
-        <Logo screenWidth={screenWidth} />
+        <a href="/home">
+          <Logo screenWidth={screenWidth} />
+        </a>
         <nav id="navbar" style={navStyle}>
           <NavLink
             activeClassName="active"

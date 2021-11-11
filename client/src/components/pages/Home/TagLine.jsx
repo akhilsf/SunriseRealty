@@ -15,7 +15,7 @@ const TagLineContainer = styled.div`
   padding: 50px;
   height: auto;
   width: 100%;
-  background-color: #424242;
+  background-color: #002039;
   box-shadow: inset 0 0 20px #000000;
 `;
 

@@ -26,7 +26,6 @@ const LineBreak = styled.span`
 `;
 
 const Statement = styled.p`
-  width: 50%;
   margin: 5px;
   font-size: 24px;
   font-weight: 500;

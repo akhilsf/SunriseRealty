@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BioCard from './BioCard/BioCard';
 
 const Container = styled.div`
-  background-color: #424242;
+  background-color: #002039;
   padding: 5%;
   display: flex;
   flex-direction: column;

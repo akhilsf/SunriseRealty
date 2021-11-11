@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Container = styled.h2`
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
