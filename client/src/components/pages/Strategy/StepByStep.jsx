@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.main`
-  background-color: #424242;
+  background-color: #002039;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -22,8 +22,7 @@ const StepContainer = styled.div`
 `;
 
 const StepTitle = styled.h1`
-  color: rgb(115, 107, 99);
-  width: 50%;
+  color: #4c5f6b;
   text-align: left;
   font-size: clamp(86px, 12vw, 128px);
   font-family: Zen Antique Soft, serif;
@@ -32,8 +31,6 @@ const StepTitle = styled.h1`
 
 const StepDetails = styled.div`
   display: flex;
-  width: 50%;
-  text-align: right;
   flex-direction: column;
   font-size: clamp(15px, 2vw, 30px);
 `;
