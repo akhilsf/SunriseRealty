@@ -13,12 +13,6 @@ const Container = styled.div`
   height: 400px;
 `;
 
-// const Image = styled.img`
-//   width: 30%;
-//   background-image: url(assets/white-lines.jpeg);
-//   height:
-// `;
-
 const Title = styled.h3`
   display: block;
   color: #748a8b;

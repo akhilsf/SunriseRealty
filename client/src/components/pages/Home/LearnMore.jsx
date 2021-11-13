@@ -10,7 +10,7 @@ const Container = styled.div`
   background-color: rgb(231, 229, 222);
   background-size: cover;
   padding: 5%;
-  height: 400px;
+  height: auto;
 `;
 
 const Title = styled.h3`
@@ -44,6 +44,7 @@ const More = styled.a`
   cursor: pointer;
   background-color: transparent;
   transition: all 0.2s;
+  text-align: center;
 
   &:hover {
     background-color: #4A5859;
@@ -58,10 +59,14 @@ const LearnMore = () => (
     </Title>
     <LineBreak />
     <Statement>
-      This is what we do and we&apos;re really good at it.
+      We acquire underperforming apartment communities in growing markets to provide investors immediate cash flow, equity growth, and tax benefits.
+    </Statement>
+    <br />
+    <Statement style={{ fontSize: '18px', fontWeight: '400' }}>
+      We pride ourselves in providing quality, safe living conditions for tenants while optimizing income and operational efficiency to maximize investor returns. Our deal cycles typically last between 3 to 5 years and include cash flow distributions throughout; at the end of the cycle we sell or refinance to deliver large payouts to investors. Throughout the holding period and beyond, investors can expect constant accessibility to the team and consistent, transparent communication through structured, detailed updates.
     </Statement>
     <More href="/strategy">
-      Learn More
+      LEARN MORE ABOUT OUR STRATEGY
     </More>
   </Container>
 );

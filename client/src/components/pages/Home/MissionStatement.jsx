@@ -9,7 +9,7 @@ const MissionContainer = styled.div`
   padding: 5%;
   align-items: center;
   border-bottom: 1px solid rgba(200,200,200);
-  height: 400px;
+  height: auto;
 `;
 
 
@@ -57,10 +57,10 @@ const MissionStatement = () => (
     <Title>MISSION STATEMENT</Title>
     <LineBreak />
     <Statement>
-      This is the mission statement. It&apos;s really good and people will like it.
+      We help investors confidently preserve and grow wealth through investments in apartment communities.
     </Statement>
-    <About href="/about">
-      About Us
+    <About href="/team">
+      MEET THE TEAM
     </About>
   </MissionContainer>
 );

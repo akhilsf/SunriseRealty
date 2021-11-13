@@ -5,17 +5,19 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  width: 80%;
 `;
 
 const Name = styled.h2`
   text-transform: uppercase;
+  line-height: 100%;
   color: white;
   font-size: 3em;
 `;
 
 const Title = styled.h4`
   color: white;
-  font-weigth: 400;
+  font-style: italic;
 `;
 
 const Bio = styled.p`
@@ -26,16 +28,15 @@ const Bio = styled.p`
 const BioDetails = ({ name, title, bio, screenWidth }) => (
   <Container>
     <Name style={{
-      textAlign: screenWidth < 1000 ? 'center' : undefined
+      textAlign: screenWidth < 1000 ? 'center' : undefined,
+      marginTop: screenWidth < 1000 ? '5%' : undefined,
     }}
     >{name}</Name>
     <Title style={{
       textAlign: screenWidth < 1000 ? 'center' : undefined
     }}>{title}</Title>
     <br />
-    <Bio style={{
-      textAlign: screenWidth < 1000 ? 'center' : undefined
-    }}>{bio}</Bio>
+    <Bio >{bio}</Bio>
   </Container>
 );
 

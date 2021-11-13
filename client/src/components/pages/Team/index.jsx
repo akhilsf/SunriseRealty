@@ -11,9 +11,9 @@ const Contents = styled.div`
   flex-direction: column;
 `;
 
-const About = ({ screenWidth }) => (
+const Team = ({ screenWidth }) => (
   <Contents>
-    <SubHeader title="About Us" />
+    <SubHeader title="The Team" />
     <WhoWeAre />
     <BioFeed screenWidth={screenWidth} />
     <Links />
@@ -21,4 +21,4 @@ const About = ({ screenWidth }) => (
   </Contents>
 );
 
-export default About;
+export default Team;

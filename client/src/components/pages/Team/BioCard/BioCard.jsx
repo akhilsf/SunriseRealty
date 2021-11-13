@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   margin: 70px;
   justify-content: center;
-  height: 50vh;
+  height: auto;
 `;
 
 const BioCard = ({

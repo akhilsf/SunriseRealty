@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 import Home from '../pages/Home/index';
-import About from '../pages/About/index';
+import Team from '../pages/Team/index';
 import Strategy from '../pages/Strategy/index';
 import InvestWithUs from '../pages/InvestWithUs/index';
 import Contact from '../pages/Contact/index';
@@ -103,10 +103,10 @@ const Header = ({ screenWidth }) => {
           <NavLink
             activeClassName="active"
             className="link"
-            to="/about"
+            to="/team"
             onClick={hamburgerOpen ? handleLinkClick : undefined}
           >
-            ABOUT
+            THE TEAM
           </NavLink>
           <NavLink
             activeClassName="active"
@@ -183,11 +183,11 @@ const Header = ({ screenWidth }) => {
         </Hamburger>
       </HeaderContainer>
       <Switch>
-        <Route path="/about">
-          <About screenWidth={screenWidth} />
+        <Route path="/team">
+          <Team screenWidth={screenWidth} />
         </Route>
         <Route path="/strategy" >
-          <Strategy />
+          <Strategy screenWidth={screenWidth} />
         </Route>
         <Route path="/invest-with-us">
           <InvestWithUs screenWidth={screenWidth} />
