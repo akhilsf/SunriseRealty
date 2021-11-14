@@ -31,9 +31,7 @@ const Text = styled.p`
 
 const TagLine = ({ screenWidth }) => {
   const getHeight = () => {
-    if (document.getElementById('taglineContainer')) {
-      return document.getElementById('taglineContainer').offsetHeight;
-    }
+    return document.getElementById('taglineContainer') ? document.getElementById('taglineContainer').offsetHeight : null;
   }
 
   getHeight();
@@ -44,8 +42,8 @@ const TagLine = ({ screenWidth }) => {
     }}>
       <TagLineContainer id="taglineContainer">
         <Text style={{
-          fontSize: 'clamp(30px, 6vw, 60px)',
-          fontFamily: 'Zen Antique Soft, serif',
+          fontSize: 'clamp(20px, 4vw, 40px)',
+          textAlign: screenWidth < 1000 ? 'center' : undefined,
         }}
         >
           Time tested asset class.
