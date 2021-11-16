@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import BioCard from './BioCard/BioCard';
 
@@ -21,7 +22,6 @@ const LineBreak = styled.span`
   margin: clamp(10px, 5%, 20px);
   background-color: rgba(200, 200, 200);
 `;
-
 
 const BioFeed = ({ screenWidth }) => {
   const bios = [
@@ -50,12 +50,22 @@ const BioFeed = ({ screenWidth }) => {
       <LineBreak />
       {bios.map((bio) => (
         <>
-          <BioCard shortID={bio.shortID} name={bio.name} title={bio.title} bio={bio.bio} screenWidth={screenWidth} />
+          <BioCard
+            shortID={bio.shortID}
+            name={bio.name}
+            title={bio.title}
+            bio={bio.bio}
+            screenWidth={screenWidth}
+          />
           <LineBreak />
         </>
       ))}
     </Container>
   );
+};
+
+BioFeed.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
 };
 
 export default BioFeed;

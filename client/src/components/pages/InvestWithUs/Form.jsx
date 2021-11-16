@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
   width: 100%;
 `;
-
 
 const LeftSideContainer = styled.h1`
   display: flex;
@@ -21,9 +21,9 @@ const Questionnaire = styled.form`
 
 const InputField = styled.div`
   margin: 20px;
-`
+`;
 
-  const Submit = styled.input`
+const Submit = styled.input`
   border: 3px solid #4A5859;
   height: 3em;
   width: 95%;
@@ -51,8 +51,8 @@ const Form = ({ screenWidth }) => (
       <p style={{ textAlign: 'center', fontSize: 'clamp(30px, 8vw, 84px)' }}>
         Are you interested in investing with us?
       </p>
-      <p style={{ textAlign: 'center', fontSize: 'clamp(20px, 6vw, 46px)'}}>
-        Too bad. This form doesn&apos;t work yet
+      <p style={{ textAlign: 'center', fontSize: 'clamp(20px, 6vw, 46px)' }}>
+        Fill out our form and we&apos;ll get back to you!
       </p>
     </LeftSideContainer>
     <Questionnaire style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
@@ -90,7 +90,7 @@ const Form = ({ screenWidth }) => (
       </InputField>
       <InputField>
         <label htmlFor="investor" style={{ display: 'block' }}>ARE YOU AN ACCREDITED INVESTOR?</label>
-        <select name="investor" id="investor" defaultValue="--"required>
+        <select name="investor" id="investor" defaultValue="--" required>
           <option value="--" disabled hidden>--</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
@@ -129,5 +129,9 @@ const Form = ({ screenWidth }) => (
     </Questionnaire>
   </Container>
 );
+
+Form.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
+};
 
 export default Form;

@@ -13,19 +13,6 @@ const Container = styled.div`
   height: 400px;
 `;
 
-const Title = styled.h3`
-  display: block;
-  color: #748a8b;
-`;
-
-const LineBreak = styled.span`
-  display: block;
-  margin: 2px;
-  width: 10%;
-  height: 1px;
-  background-color: #4A5859;
-`;
-
 const Statement = styled.p`
   margin: 5px;
   font-size: 24px;

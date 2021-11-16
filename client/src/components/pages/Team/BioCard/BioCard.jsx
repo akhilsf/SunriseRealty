@@ -13,12 +13,13 @@ const Container = styled.div`
 `;
 
 const BioCard = ({
-  shortID, name, title, bio, screenWidth
+  shortID, name, title, bio, screenWidth,
 }) => (
   <Container style={{
     flexDirection: screenWidth < 1000 ? 'column' : undefined,
     alignItems: screenWidth < 1000 ? 'center' : undefined,
-  }}>
+  }}
+  >
     <MemberPicture shortID={shortID} screenWidth={screenWidth} />
     <BioDetails name={name} title={title} bio={bio} screenWidth={screenWidth} />
   </Container>
@@ -29,6 +30,7 @@ BioCard.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   bio: PropTypes.string.isRequired,
+  screenWidth: PropTypes.number.isRequired,
 };
 
 export default BioCard;

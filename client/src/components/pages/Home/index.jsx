@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import TagLine from './TagLine';
 import MissionStatement from './MissionStatement';
@@ -17,7 +18,10 @@ const Home = ({ screenWidth }) => (
     <LearnMore />
     <Footer />
   </Contents>
-
 );
+
+Home.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
+};
 
 export default Home;

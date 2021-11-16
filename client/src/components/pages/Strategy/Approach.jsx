@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ApproachContainer = styled.div`
@@ -18,15 +19,9 @@ const RationaleContainer = styled.div`
   width: 80%;
   display: flex;
   font-size: clamp(15px, 2vw, 24px);
-  flex-direction: ${props => props.screenWidth < 1250 ? "column" : "row"};
+  flex-direction: ${(props) => (props.screenWidth < 1250 ? 'column' : 'row')};
   align-items: center;
-`
-
-const Title = styled.h2`
-  display: block;
-  margin-top: 25px;
-  margin-bottom: 50px;
-`
+`;
 
 const RationaleTitle = styled.h3`
   display: block;
@@ -49,7 +44,7 @@ const Statement = styled.p`
   font-weight: 500;
   text-align: center;
   width: 80vw;
-  text-align: ${props => props.screenWidth < 1250 ? "center" : "left"}
+  text-align: ${(props) => (props.screenWidth < 1250 ? 'center' : 'left')}
 `;
 
 const Approach = ({ screenWidth }) => {
@@ -92,7 +87,7 @@ const Approach = ({ screenWidth }) => {
       <LineBreak />
       {rationaleList.map((item) => (
         <>
-          <RationaleContainer screenWidth={screenWidth} >
+          <RationaleContainer screenWidth={screenWidth}>
             <RationaleTitle>{item.rationale}</RationaleTitle>
             <Statement screenWidth={screenWidth}>
               {item.description}
@@ -102,9 +97,11 @@ const Approach = ({ screenWidth }) => {
         </>
       ))}
     </ApproachContainer>
-  )
+  );
+};
+
+Approach.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
 };
 
 export default Approach;
-
-

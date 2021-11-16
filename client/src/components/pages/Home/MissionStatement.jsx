@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -11,7 +12,6 @@ const MissionContainer = styled.div`
   border-bottom: 1px solid rgba(200,200,200);
   height: auto;
 `;
-
 
 const Title = styled.h3`
   display: block;

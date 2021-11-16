@@ -25,18 +25,25 @@ const Bio = styled.p`
   color: white;
 `;
 
-const BioDetails = ({ name, title, bio, screenWidth }) => (
+const BioDetails = ({
+  name, title, bio, screenWidth,
+}) => (
   <Container>
     <Name style={{
       textAlign: screenWidth < 1000 ? 'center' : undefined,
       marginTop: screenWidth < 1000 ? '5%' : undefined,
     }}
-    >{name}</Name>
+    >
+      {name}
+    </Name>
     <Title style={{
-      textAlign: screenWidth < 1000 ? 'center' : undefined
-    }}>{title}</Title>
+      textAlign: screenWidth < 1000 ? 'center' : undefined,
+    }}
+    >
+      {title}
+    </Title>
     <br />
-    <Bio >{bio}</Bio>
+    <Bio>{bio}</Bio>
   </Container>
 );
 
@@ -44,6 +51,7 @@ BioDetails.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   bio: PropTypes.string.isRequired,
+  screenWidth: PropTypes.number.isRequired,
 };
 
 export default BioDetails;

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -28,6 +29,7 @@ const LineBreak = styled.span`
 
 const Statement = styled.p`
   margin: 5px;
+  width: max(1400px);
   font-size: 24px;
   font-weight: 500;
   text-align: center;

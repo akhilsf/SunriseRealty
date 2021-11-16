@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
   width: 100%;
 `;
-
 
 const LeftSideContainer = styled.h1`
   display: flex;
@@ -21,9 +21,9 @@ const Questionnaire = styled.form`
 
 const InputField = styled.div`
   margin: 20px;
-`
+`;
 
-  const Submit = styled.input`
+const Submit = styled.input`
   border: 3px solid #4A5859;
   height: 3em;
   width: 95%;
@@ -51,8 +51,8 @@ const Form = ({ screenWidth }) => (
       <p style={{ textAlign: 'center', fontSize: 'clamp(30px, 8vw, 84px)' }}>
         Inquiries?
       </p>
-      <p style={{ textAlign: 'center', fontSize: 'clamp(20px, 6vw, 46px)'}}>
-        Too bad. This form doesn&apos;t work either
+      <p style={{ textAlign: 'center', fontSize: 'clamp(20px, 6vw, 46px)' }}>
+        Send us a note!
       </p>
     </LeftSideContainer>
     <Questionnaire style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
@@ -82,5 +82,9 @@ const Form = ({ screenWidth }) => (
     </Questionnaire>
   </Container>
 );
+
+Form.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
+};
 
 export default Form;

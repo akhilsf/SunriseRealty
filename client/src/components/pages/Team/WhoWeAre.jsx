@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -31,7 +32,6 @@ const Statement = styled.p`
   font-weight: 500;
   text-align: center;
 `;
-
 
 const WhoWeAre = () => (
   <WhoContainer>
