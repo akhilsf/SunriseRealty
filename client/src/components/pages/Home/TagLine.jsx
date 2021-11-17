@@ -10,7 +10,7 @@ const Container = styled.div`
 const TagLineContainer = styled.div`
   box-sizing: border-box;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   background-color: #4d6374;
   box-shadow: inset 0 0 20px #000000;
 `;
