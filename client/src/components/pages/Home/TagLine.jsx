@@ -10,7 +10,6 @@ const Container = styled.div`
 const TagLineContainer = styled.div`
   box-sizing: border-box;
   flex-direction: column;
-  width: 50%;
   background-color: #4d6374;
   box-shadow: inset 0 0 20px #000000;
 `;
@@ -21,38 +20,46 @@ const Pic = styled.img`
 
 const Text = styled.p`
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   color: #f5f3f2;
   font-size: clamp(20px, 4vw, 40px);
 `;
 
-const TagLine = ({ screenWidth }) => (
-  <Container style={{
-    flexDirection: screenWidth < 1000 ? 'column' : undefined,
-  }}
-  >
-    <TagLineContainer id="taglineContainer">
-      <Text style={{
-        height: screenWidth < 1000 ? '20vh' : '40vh',
+const TagLine = ({ screenWidth }) => {
+  const widthThreshold = 1000;
+
+  return (
+    <Container style={{
+      flexDirection: screenWidth < widthThreshold ? 'column' : undefined,
+    }}
+    >
+      <TagLineContainer style={{
+        width: screenWidth < widthThreshold ? '100%' : '50%',
       }}
       >
-        Time tested asset class.
-        <br />
-        <br />
-        Disciplined approach.
-      </Text>
-    </TagLineContainer>
-    <Pic
-      src="assets/homePhoto.jpeg"
-      style={{
-        width: screenWidth < 1000 ? undefined : '50%',
-        height: screenWidth < 1000 ? '20vh' : '40vh',
-      }}
-    />
-  </Container>
-);
+        <Text style={{
+          height: screenWidth < widthThreshold ? '20vh' : '40vh',
+          justifyContent: screenWidth < widthThreshold ? 'center' : undefined,
+          marginLeft: screenWidth < widthThreshold ? undefined : '5%',
+          textAlign: screenWidth < widthThreshold ? 'center' : undefined,
+        }}
+        >
+          Time tested asset class.
+          <br />
+          <br />
+          Disciplined approach.
+        </Text>
+      </TagLineContainer>
+      <Pic
+        src="assets/homePhoto.jpeg"
+        style={{
+          width: screenWidth < widthThreshold ? undefined : '50%',
+          height: screenWidth < widthThreshold ? '20vh' : '40vh',
+        }}
+      />
+    </Container>
+  );
+};
 
 TagLine.propTypes = {
   screenWidth: PropTypes.number.isRequired,

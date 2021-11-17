@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import SubHeader from '../../shared/SubHeader';
-import FAQs from './FAQs';
+// eslint-disable-next-line import/no-unresolved
+import FAQList from './FAQList';
 import Footer from '../../shared/Footer/index';
 
 const Contents = styled.div`
@@ -12,7 +13,7 @@ const Contents = styled.div`
 const Resources = () => (
   <Contents>
     <SubHeader title="Frequently Asked Questions" />
-    <FAQs />
+    <FAQList />
     <Footer />
   </Contents>
 );

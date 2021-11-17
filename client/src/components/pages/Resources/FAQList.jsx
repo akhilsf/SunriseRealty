@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styled from 'styled-components';
+import FAQ from './FAQ';
 
 const Container = styled.main`
   background-color: #4d6374;
@@ -12,22 +13,22 @@ const Container = styled.main`
   box-shadow: inset 0 0 20px #000000;
 `;
 
-const FAQ = styled.div`
-  display: flex;
-  width: 80%;
-  flex-direction: column;
-  font-size: clamp(15px, 2vw, 30px);
-`;
+// const FAQ = styled.div`
+//   display: flex;
+//   width: 80%;
+//   flex-direction: column;
+//   font-size: clamp(15px, 2vw, 30px);
+// `;
 
-const Question = styled.h2`
-  text-transform: uppercase;
-  margin-bottom: 2%;
-  color: #E1D9D1;
-  font-size: 1em;
-`;
+// const Question = styled.h2`
+//   text-transform: uppercase;
+//   margin-bottom: 2%;
+//   color: #E1D9D1;
+//   font-size: 1em;
+// `;
 
 const Response = styled.p`
-  font-size: 1em;
+  font-size: .8em;
   color: white;
 `;
 
@@ -38,19 +39,18 @@ const ResponseList = styled.ul`
 
 const ResponseListItem = styled.li`
   color: white;
-  font-size: 1em;
+  font-size: .8em;
   margin-bottom: 2%;
 `;
 
 const LineBreak = styled.span`
   display: block;
-  width: 90vw;
+  width: 90%;
   height: 1px;
-  margin: clamp(10px, 5%, 20px);
-  background-color: rgba(200, 200, 200);
+  background-color: #94999a;
 `;
 
-const FAQs = () => {
+const FAQList = () => {
   const QAs = [
     {
       question: 'Do you invest in your own deals?',
@@ -192,22 +192,12 @@ const FAQs = () => {
 
   return (
     <Container>
-      <LineBreak />
       {QAs.map((qa) => (
-        <>
-          <FAQ>
-            <Question>
-              Q:
-              {' '}
-              {qa.question}
-            </Question>
-            {qa.answer}
-          </FAQ>
-          <LineBreak />
-        </>
+        <FAQ question={qa.question} answer={qa.answer} />
       ))}
+      <LineBreak />
     </Container>
   );
 };
 
-export default FAQs;
+export default FAQList;
