@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.main`
-  background-color: #002039;
+  background-color: #4d6374;
   padding: 2%;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ const Question = styled.h2`
 `;
 
 const Response = styled.p`
-  font-size: .8em;
+  font-size: 1em;
   color: white;
 `;
 
@@ -38,6 +38,7 @@ const ResponseList = styled.ul`
 
 const ResponseListItem = styled.li`
   color: white;
+  font-size: 1em;
   margin-bottom: 2%;
 `;
 

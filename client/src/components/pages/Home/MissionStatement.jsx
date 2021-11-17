@@ -28,7 +28,7 @@ const LineBreak = styled.span`
 
 const Statement = styled.p`
   margin: 5px;
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 40px);
   font-weight: 500;
   text-align: center;
 `;

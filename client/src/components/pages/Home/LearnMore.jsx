@@ -8,7 +8,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-image: url(assets/white-lines.jpeg);
-  background-color: rgb(231, 229, 222);
   background-size: cover;
   padding: 5%;
   height: auto;
@@ -29,8 +28,7 @@ const LineBreak = styled.span`
 
 const Statement = styled.p`
   margin: 5px;
-  width: max(1400px);
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 40px);
   font-weight: 500;
   text-align: center;
 `;

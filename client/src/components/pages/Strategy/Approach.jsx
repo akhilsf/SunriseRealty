@@ -48,8 +48,6 @@ const Statement = styled.p`
 `;
 
 const Approach = ({ screenWidth }) => {
-  console.log(screenWidth);
-
   const rationaleList = [
     {
       rationale: 'Cash Flow',

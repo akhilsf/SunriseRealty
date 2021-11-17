@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.main`
-  background-color: #002039;
+  background-color: #4d6374;
   padding: 2%;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ const StepContainer = styled.div`
 `;
 
 const StepNumber = styled.h1`
-  color: #4c5f6b;
+  color: #748a8b;
   text-align: left;
   font-size: clamp(86px, 12vw, 128px);
   font-family: Zen Antique Soft, serif;
@@ -42,11 +42,12 @@ const Title = styled.h2`
   text-transform: uppercase;
   text-align: center;
   color: white;
-  font-size: 3em;
+  font-size: 2em;
+  margin-bottom: 1em;
 `;
 
 const Description = styled.li`
-  font-size: 0.8em;
+  font-size: 1em;
   margin-bottom: 2%;
   color: white;
 `;
