@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-Professional website to showcase Sunrise Realty Investment's business and serve as a hub for investors to contact Sunrise Realty <br />
+Professional website for Sunrise Realty Investment's business <br />
 Link: https://heuristic-mcclintock-0931d4.netlify.app/ <br />
 (NOTE: STILL IN PRODUCTION AND CHANGING FREQUENTLY)
 </p>
