@@ -5,7 +5,7 @@
 <p align="center">
 Professional website to showcase Sunrise Realty Investment's business and serve as a hub for investors to contact Sunrise Realty <br />
 Link: https://heuristic-mcclintock-0931d4.netlify.app/ <br />
-(NOTE: STILL IN PRODUCTION)
+(NOTE: STILL IN PRODUCTION AND CHANGING FREQUENTLY)
 </p>
 
 ![Screen Shot 2021-11-10 at 12 47 23 PM](https://user-images.githubusercontent.com/81180232/141190944-239c24e8-5564-4b20-9463-67ec7e93ea01.png)
