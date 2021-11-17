@@ -39,7 +39,7 @@ Visit here: https://heuristic-mcclintock-0931d4.netlify.app/
 
 OR
 
-To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer.
+Clone and run this application! You'll need Git and Node.js (which comes with npm) installed on your computer.
 
 ### From your command line:
 
