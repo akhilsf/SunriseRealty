@@ -15,7 +15,7 @@ const Strategy = ({ screenWidth }) => (
   <Contents>
     <SubHeader title="Strategy" />
     <Approach screenWidth={screenWidth} />
-    <StepByStep />
+    <StepByStep screenWidth={screenWidth} />
     <Footer />
   </Contents>
 );

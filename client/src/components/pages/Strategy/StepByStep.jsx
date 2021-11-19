@@ -1,6 +1,14 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable semi */
 /* eslint-disable max-len */
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { MagnifyingGlass } from '@styled-icons/open-iconic/MagnifyingGlass';
+import { TargetArrow } from '@styled-icons/fluentui-system-filled/TargetArrow';
+import { Steps } from '@styled-icons/fluentui-system-filled/Steps';
+import { TorsoBusiness } from '@styled-icons/foundation/TorsoBusiness';
+import { Sell } from '@styled-icons/material-twotone/Sell'
 
 const Container = styled.main`
   background-color: #4d6374;
@@ -22,14 +30,6 @@ const StepContainer = styled.div`
   color: white;
 `;
 
-const StepNumber = styled.h1`
-  color: #748a8b;
-  text-align: left;
-  font-size: clamp(86px, 12vw, 128px);
-  font-family: Zen Antique Soft, serif;
-  margin-right: 15px;
-`;
-
 const StepDetails = styled.div`
   display: flex;
   flex-direction: column;
@@ -46,24 +46,49 @@ const Title = styled.h2`
   margin-bottom: 1em;
 `;
 
+const DescriptionList = styled.ul``;
+
 const Description = styled.li`
+  list-style-type: '~  ';
   font-size: 1em;
   margin-bottom: 2%;
   color: white;
 `;
 
-const LineBreak = styled.span`
-  display: block;
-  width: 90vw;
-  height: 1px;
-  margin: clamp(10px, 5%, 20px);
-  background-color: rgba(200, 200, 200);
-`;
+const Icons = {
+  MagnifyingGlass: styled(MagnifyingGlass)`
+    color: #9a9a9a;
+  `,
+  TargetArrow: styled(TargetArrow)`
+    color: #9a9a9a;
+  `,
+  Steps: styled(Steps)`
+    color: #9a9a9a;
+  `,
+  TorsoBusiness: styled(TorsoBusiness)`
+    color: #9a9a9a;
+  `,
+  Sell: styled(Sell)`
+    color: #9a9a9a;
+  `,
+};
 
-const StepByStep = () => {
+const StepByStep = ({ screenWidth }) => {
+  const [iconSize, setIconSize] = useState(0);
+
+  useEffect(() => {
+    if (screenWidth < 500) {
+      setIconSize(150);
+    } else if (screenWidth < 1000) {
+      setIconSize(200);
+    } else {
+      setIconSize(300);
+    }
+  }, [screenWidth])
+
   const steps = [
     {
-      stepNo: 'One',
+      stepIcon: <Icons.MagnifyingGlass size={iconSize} />,
       stepTitle: 'Market Selection',
       description:
   <>
@@ -73,7 +98,7 @@ const StepByStep = () => {
   </>,
     },
     {
-      stepNo: 'Two',
+      stepIcon: <Icons.TargetArrow size={iconSize} />,
       stepTitle: 'Apartment Selection',
       description:
   <>
@@ -86,7 +111,7 @@ const StepByStep = () => {
   </>,
     },
     {
-      stepNo: 'Three',
+      stepIcon: <Icons.Steps size={iconSize} />,
       stepTitle: 'Acquisition Process',
       description:
   <>
@@ -102,7 +127,7 @@ const StepByStep = () => {
   </>,
     },
     {
-      stepNo: 'Four',
+      stepIcon: <Icons.TorsoBusiness size={iconSize} />,
       stepTitle: 'Asset Management',
       description:
   <>
@@ -118,7 +143,7 @@ const StepByStep = () => {
   </>,
     },
     {
-      stepNo: 'Five',
+      stepIcon: <Icons.Sell size={iconSize} />,
       stepTitle: 'Exit',
       description:
   <>
@@ -127,26 +152,31 @@ const StepByStep = () => {
     </Description>
   </>,
     },
-
   ];
 
   return (
     <Container>
-      <LineBreak />
+      {/* <LineBreak /> */}
       {steps.map((step) => (
         <>
           <StepContainer>
-            <StepNumber>{step.stepNo}</StepNumber>
+            {step.stepIcon}
             <StepDetails>
               <Title>{step.stepTitle}</Title>
-              <ul>{step.description}</ul>
+              <DescriptionList>
+                {step.description}
+              </DescriptionList>
             </StepDetails>
           </StepContainer>
-          <LineBreak />
+          {/* <LineBreak /> */}
         </>
       ))}
     </Container>
   );
 };
+
+StepByStep.propTypes = {
+  screenWidth: PropTypes.number.isRequired,
+}
 
 export default StepByStep;

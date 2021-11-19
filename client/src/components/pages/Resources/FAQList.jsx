@@ -38,6 +38,7 @@ const ResponseList = styled.ul`
 `;
 
 const ResponseListItem = styled.li`
+  list-style-type: '~  ';
   color: white;
   font-size: .8em;
   margin-bottom: 2%;
