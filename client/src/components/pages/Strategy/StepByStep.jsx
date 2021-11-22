@@ -57,19 +57,19 @@ const Description = styled.li`
 
 const Icons = {
   MagnifyingGlass: styled(MagnifyingGlass)`
-    color: #9a9a9a;
+    color: #bababa;
   `,
   TargetArrow: styled(TargetArrow)`
-    color: #9a9a9a;
+    color: #bababa;
   `,
   Steps: styled(Steps)`
-    color: #9a9a9a;
+    color: #bababa;
   `,
   TorsoBusiness: styled(TorsoBusiness)`
-    color: #9a9a9a;
+    color: #bababa;
   `,
   Sell: styled(Sell)`
-    color: #9a9a9a;
+    color: #bababa;
   `,
 };
 
