@@ -57,20 +57,16 @@ const Form = ({ screenWidth }) => (
     </LeftSideContainer>
     <Questionnaire style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
       <InputField>
-        <label htmlFor="firstName" style={{ display: 'block' }}>FIRST NAME</label>
-        <input type="text" name="firstName" id="firstName" required />
+        <label htmlFor="nameInvestWUs" style={{ display: 'block' }}>FULL NAME</label>
+        <input type="text" name="nameInvestWUs" id="nameInvestWUs" required />
       </InputField>
       <InputField>
-        <label htmlFor="lastName" style={{ display: 'block' }}>LAST NAME</label>
-        <input type="text" name="lastName" id="lastName" required />
+        <label htmlFor="emailInvestWUs" style={{ display: 'block' }}>EMAIL ADDRESS</label>
+        <input type="text" name="emailInvestWUs" id="emailInvestWUs" required />
       </InputField>
       <InputField>
-        <label htmlFor="email" style={{ display: 'block' }}>EMAIL ADDRESS</label>
-        <input type="text" name="email" id="email" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="phone" style={{ display: 'block' }}>PHONE NUMBER</label>
-        <input type="text" name="phone" id="phone" required />
+        <label htmlFor="phoneInvestWUs" style={{ display: 'block' }}>PHONE NUMBER</label>
+        <input type="text" name="phoneInvestWUs" id="phoneInvestWUs" required />
       </InputField>
       <InputField>
         <label htmlFor="street" style={{ display: 'block' }}>STREET ADDRESS</label>

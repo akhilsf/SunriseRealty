@@ -174,6 +174,7 @@ const Header = ({ screenWidth }) => {
           </NavLink>
         </nav>
         <Hamburger
+          data-testid="hamburger"
           onClick={handleHamburgerAction}
           style={{ display: screenWidth > 1400 ? 'none' : undefined }}
         >
