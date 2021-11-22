@@ -13,7 +13,7 @@ Link: https://heuristic-mcclintock-0931d4.netlify.app/ <br />
 ![Screen Shot 2021-11-10 at 12 28 51 PM](https://user-images.githubusercontent.com/81180232/141188537-8cd0e931-510a-4d95-80b5-f21bd30c0fa5.png)
 
 ## Key Features
-* Mobile-friendly
+* Desktop and mobile friendly
 * Dynamic rendering based on screen size
 * Simple, modern design
 
