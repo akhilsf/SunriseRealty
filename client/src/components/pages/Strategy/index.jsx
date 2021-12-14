@@ -14,8 +14,8 @@ const Contents = styled.div`
 const Strategy = ({ screenWidth }) => (
   <Contents>
     <SubHeader title="Strategy" />
-    <Approach screenWidth={screenWidth} />
     <StepByStep screenWidth={screenWidth} />
+    <Approach screenWidth={screenWidth} />
     <Footer />
   </Contents>
 );

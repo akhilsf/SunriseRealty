@@ -28,7 +28,6 @@ const Button = styled.a`
   padding-right: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 20px;
   cursor: pointer;
   background-color: transparent;
   transition: all 0.2s;

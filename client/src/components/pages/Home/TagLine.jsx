@@ -43,7 +43,7 @@ const TagLine = ({ screenWidth }) => {
           textAlign: screenWidth < widthThreshold ? 'center' : undefined,
         }}
         >
-          Time tested asset class.
+          Time-tested asset class.
           <br />
           <br />
           Disciplined approach.

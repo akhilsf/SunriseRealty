@@ -13,7 +13,7 @@ const WhoContainer = styled.div`
   height: auto;
 `;
 
-const Title = styled.h3`
+const Title = styled.h1`
   display: block;
   color: #748a8b;
 `;
@@ -27,18 +27,16 @@ const LineBreak = styled.span`
 `;
 
 const Statement = styled.p`
-  margin: 5px;
-  font-size: 24px;
-  font-weight: 500;
+  margin: 50px 0 50px 0;
+  font-size: clamp(15px, 4vw, 30px);
   text-align: center;
 `;
 
 const WhoWeAre = () => (
   <WhoContainer>
-    <Title>Who We Are</Title>
-    <LineBreak />
+    <Title>WHO WE ARE</Title>
     <Statement>
-      We are a group of a seasoned professionals with a track record of investing in high cash-flow generating multi-family homes.
+      We are a group of a seasoned professionals with a track record of qualifying investments through detailed market analysis and financial modeling and meeting returns targets with commercial real estate.
     </Statement>
   </WhoContainer>
 );

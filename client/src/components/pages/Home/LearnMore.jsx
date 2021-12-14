@@ -13,9 +13,10 @@ const Container = styled.div`
   height: auto;
 `;
 
-const Title = styled.h3`
+const Title = styled.h1`
   display: block;
   color: #748a8b;
+  margin-bottom: 50px;
 `;
 
 const LineBreak = styled.span`
@@ -27,20 +28,35 @@ const LineBreak = styled.span`
 `;
 
 const Statement = styled.p`
-  margin: 5px;
-  font-size: clamp(20px, 4vw, 40px);
-  font-weight: 500;
+  font-size: clamp(15px, 4vw, 30px);
   text-align: center;
 `;
 
+const ValueAddContainer = styled.div`
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+`;
+
+const ValueAddList = styled.ul`
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+`;
+
+const ValueAddItem = styled.li`
+  width: 45%;
+  font-size: clamp(15px, 4vw, 25px);
+`
+
+
 const More = styled.a`
   border: 3px solid #4A5859;
-  margin-top: 60px;
+  margin-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 20px;
   cursor: pointer;
   background-color: transparent;
   transition: all 0.2s;
@@ -57,14 +73,25 @@ const LearnMore = () => (
     <Title>
       WHAT WE DO
     </Title>
-    <LineBreak />
+    {/* <LineBreak /> */}
     <Statement>
-      We acquire underperforming apartment communities in growing markets to provide investors immediate cash flow, equity growth, and tax benefits.
+      We acquire underperforming apartment communities in growing markets to provide investors cash flow, equity growth, and tax benefits.
     </Statement>
     <br />
-    <Statement style={{ fontSize: '18px', fontWeight: '400' }}>
-      We pride ourselves in providing quality, safe living conditions for tenants while optimizing income and operational efficiency to maximize investor returns. Our deal cycles typically last between 3 to 5 years and include cash flow distributions throughout; at the end of the cycle we sell or refinance to deliver large payouts to investors. Throughout the holding period and beyond, investors can expect constant accessibility to the team and consistent, transparent communication through structured, detailed updates.
-    </Statement>
+    <ValueAddContainer>
+      <ValueAddList>
+        <ValueAddItem>Quality, safe living conditions for tenants</ValueAddItem>
+        <ValueAddItem>Maximized investor returns through optimized income and operation efficiency</ValueAddItem>
+      </ValueAddList>
+      <ValueAddList>
+        <ValueAddItem>Deal cycles lasting between 3 to 5 years with cash flow distributions throughout</ValueAddItem>
+        <ValueAddItem>Large payouts at the end of deal cycles either through a sale or refinancing</ValueAddItem>
+      </ValueAddList>
+      <ValueAddList>
+        <ValueAddItem>Highly accessible deal team throughout the holding period and beyond</ValueAddItem>
+        <ValueAddItem>Consistent, transparent communication with structured, detailed updates</ValueAddItem>
+      </ValueAddList>
+    </ValueAddContainer>
     <More href="/strategy">
       LEARN MORE ABOUT OUR STRATEGY
     </More>
@@ -72,3 +99,13 @@ const LearnMore = () => (
 );
 
 export default LearnMore;
+
+
+// We pride ourselves in providing quality, safe living conditions for tenants while optimizing income and operational efficiency to maximize investor returns. Our deal cycles typically last between 3 to 5 years and include cash flow distributions throughout; at the end of the cycle we sell or refinance to deliver large payouts to investors. Throughout the holding period and beyond, investors can expect constant accessibility to the team and consistent, transparent communication through structured, detailed updates.
+
+// Quality, safe living conditions for tenants
+// Maximized investor returs through optimized income and operation efficiency
+// Deal cycles lasting between 3 to 5 years with cash flow distributions throughout
+// Large payouts at the end of deal cycles either through a sale or refinancing
+// Highly accessible deal team throughout the holding period and beyond
+// Consistent, transparent communication with structured, detailed updates

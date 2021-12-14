@@ -96,12 +96,12 @@ const Header = ({ screenWidth }) => {
     let linksArray = Array.prototype.slice.call(htmlCollection);
 
     linksArray.forEach((link) => {
-      console.log(link)
       link.style.fontWeight = "500";
       link.style.color = "#4A5859"
     })
 
     let target = e ? e.target.id : window.location.pathname.split('/')[1];
+    if (!target) target = 'home';
 
     document.getElementById(target).style.fontWeight = "900";
     document.getElementById(target).style.color = "#85a7b1";
@@ -156,7 +156,7 @@ const Header = ({ screenWidth }) => {
             id="invest"
             onClick={handleLinkClick}
           >
-            INVEST WITH US
+            INVEST
           </NavLink>
           <NavLink
             activeClassName="active"
@@ -174,7 +174,7 @@ const Header = ({ screenWidth }) => {
             id="resources"
             onClick={handleLinkClick}
           >
-            RESOURCES
+            FAQs
           </NavLink>
         </nav>
         <Hamburger

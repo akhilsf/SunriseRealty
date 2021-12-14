@@ -17,7 +17,6 @@ const Container = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 0 20px #000000;
 `;
 
 const StepContainer = styled.div`
@@ -43,13 +42,13 @@ const Title = styled.h2`
   text-align: center;
   color: white;
   font-size: 2em;
-  margin-bottom: 1em;
+  margin: 1em 0 1em 0;
 `;
 
 const DescriptionList = styled.ul``;
 
 const Description = styled.li`
-  list-style-type: '~  ';
+  list-style-type: '~ ';
   font-size: 1em;
   margin-bottom: 2%;
   color: white;
