@@ -16,7 +16,7 @@ const Logo = ({ screenWidth }) => {
     } else if (screenWidth < 750) {
       setLogoWidth(250);
     } else {
-      setLogoWidth(400);
+      setLogoWidth(300);
     }
   }, [screenWidth]);
 

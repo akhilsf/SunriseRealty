@@ -4,25 +4,24 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  box-shadow: inset 0 0 20px #000000;
 `;
 
 const TagLineContainer = styled.div`
   box-sizing: border-box;
   flex-direction: column;
   background-color: #4d6374;
-  box-shadow: inset 0 0 20px #000000;
 `;
 
-const Pic = styled.img`
+  const Pic = styled.img`
   object-fit: cover;
-`;
+  `;
 
-const Text = styled.p`
+  const Text = styled.p`
   display: flex;
   align-items: center;
   color: #f5f3f2;
   font-size: clamp(20px, 4vw, 40px);
+  font-family: 'Futura', sans-serif;
 `;
 
 const TagLine = ({ screenWidth }) => {

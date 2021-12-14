@@ -9,8 +9,6 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-shadow: inset 0 0 20px #000000;
 `;
 
 // const FAQ = styled.div`
