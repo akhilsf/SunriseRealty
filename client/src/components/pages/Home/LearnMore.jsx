@@ -7,8 +7,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/white-lines.jpeg);
-  background-size: cover;
+  background-color: rgb(245, 245, 245);
   padding: 5%;
   height: auto;
 `;
@@ -16,25 +15,17 @@ const Container = styled.div`
 const Title = styled.h1`
   display: block;
   color: #748a8b;
-  margin-bottom: 50px;
-`;
-
-const LineBreak = styled.span`
-  display: block;
-  margin: 2px;
-  width: 10%;
-  height: 1px;
-  background-color: #4A5859;
 `;
 
 const Statement = styled.p`
+  margin-top: 25px;
   font-size: clamp(15px, 4vw, 30px);
   text-align: center;
 `;
 
 const ValueAddContainer = styled.div`
   display: flex;
-  margin: 10px;
+  margin: 5%;
   flex-direction: column;
 `;
 
@@ -49,10 +40,8 @@ const ValueAddItem = styled.li`
   font-size: clamp(15px, 4vw, 25px);
 `
 
-
 const More = styled.a`
   border: 3px solid #4A5859;
-  margin-top: 50px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 15px;
@@ -75,7 +64,7 @@ const LearnMore = () => (
     </Title>
     {/* <LineBreak /> */}
     <Statement>
-      We acquire underperforming apartment communities in growing markets to provide investors cash flow, equity growth, and tax benefits.
+      We acquire underperforming apartment communities in growing markets to provide investors cash flow, equity growth, and tax benefits
     </Statement>
     <br />
     <ValueAddContainer>

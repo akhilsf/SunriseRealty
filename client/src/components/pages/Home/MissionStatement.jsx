@@ -9,7 +9,6 @@ const MissionContainer = styled.div`
   justify-content: center;
   padding: 5%;
   align-items: center;
-  border-bottom: 1px solid rgba(200,200,200);
   height: auto;
 `;
 
@@ -18,16 +17,8 @@ const Title = styled.h1`
   color: #748a8b;
 `;
 
-const LineBreak = styled.span`
-  display: block;
-  margin: 2px;
-  width: 10%;
-  height: 1px;
-  background-color: #4A5859;
-`;
-
 const Statement = styled.p`
-  margin: 50px 0 50px 0;
+  margin: 25px 0 50px 0;
   font-size: clamp(15px, 4vw, 30px);
   text-align: center;
 `;
@@ -52,9 +43,8 @@ const About = styled.a`
 const MissionStatement = () => (
   <MissionContainer>
     <Title>OUR MISSION</Title>
-    {/* <LineBreak /> */}
     <Statement>
-      We help investors confidently preserve and grow wealth through investments in apartment communities.
+      We help investors confidently preserve and grow wealth through investments in apartment communities
     </Statement>
     <About href="/team">
       MEET THE TEAM

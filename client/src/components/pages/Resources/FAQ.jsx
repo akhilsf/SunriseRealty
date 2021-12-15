@@ -10,18 +10,13 @@ const Container = styled.div`
   flex-direction: column;
   font-size: clamp(15px, 2vw, 30px);
   transition: background-color 0.75s;
+  border: 1px solid #bfc9cb;
+  border-left: 10px solid #4d6374;
+  margin-bottom: 10px;
 
   &:hover {
-    background-color: #324042;
+    background-color: rgb(220, 220, 220);
   }
-
-`;
-
-const LineBreak = styled.span`
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #94999a;
 `;
 
 const QuestionBlock = styled.div`
@@ -33,7 +28,7 @@ const Question = styled.h2`
   text-transform: uppercase;
   margin-top: 2%;
   margin-bottom: 2%;
-  color: #E1D9D1;
+  color: #748a8b;
   font-size: 1em;
   transition: color 0.75s;
 `;
@@ -53,10 +48,9 @@ const FAQ = ({ question, answer }) => {
   return (
     <>
       <Container style={{
-        backgroundColor: isOpen ? '#455659' : undefined,
+        backgroundColor: isOpen ? 'rgb(220, 220, 220)' : undefined,
       }}
       >
-        <LineBreak />
         <QuestionBlock onClick={openQuestion}>
           <Question>
             Q:

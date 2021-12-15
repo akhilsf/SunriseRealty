@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import SubHeader from '../../shared/SubHeader';
 import Footer from '../../shared/Footer/index';
 import Form from './Form';
 
@@ -12,7 +11,6 @@ const Contents = styled.div`
 
 const Contact = ({ screenWidth }) => (
   <Contents>
-    <SubHeader title="Contact Us" />
     <Form screenWidth={screenWidth} />
     <Footer />
   </Contents>

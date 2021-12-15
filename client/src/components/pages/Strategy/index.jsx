@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import SubHeader from '../../shared/SubHeader';
+import Subheader from './Subheader';
 import Approach from './Approach';
 import Footer from '../../shared/Footer/index';
 import StepByStep from './StepByStep';
@@ -13,7 +13,7 @@ const Contents = styled.div`
 
 const Strategy = ({ screenWidth }) => (
   <Contents>
-    <SubHeader title="Strategy" />
+    <Subheader />
     <StepByStep screenWidth={screenWidth} />
     <Approach screenWidth={screenWidth} />
     <Footer />

@@ -48,10 +48,11 @@ const Submit = styled.input`
 const Form = ({ screenWidth }) => (
   <Container style={{ flexDirection: screenWidth < 1000 ? 'column' : undefined }}>
     <LeftSideContainer style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
-      <p style={{ textAlign: 'center', fontSize: 'clamp(30px, 8vw, 84px)' }}>
+      <p style={{ textAlign: 'center', fontSize: 'clamp(20px, 4vw, 40px)' }}>
         Are you interested in investing with us?
       </p>
-      <p style={{ textAlign: 'center', fontSize: 'clamp(20px, 6vw, 46px)' }}>
+      <br />
+      <p style={{ textAlign: 'center', fontWeight: '400', fontSize: 'clamp(15px, 2vw, 30px)' }}>
         Fill out our form and we&apos;ll get back to you!
       </p>
     </LeftSideContainer>

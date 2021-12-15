@@ -6,6 +6,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 25px;
+  background-color: rgb(245, 245, 245);
 `;
 
 const TagLineContainer = styled.div`
@@ -21,6 +22,7 @@ const TagLineContainer = styled.div`
   const Text = styled.p`
   display: flex;
   width: 50%;
+  margin-left: 5%;
   align-items: center;
   color: #f5f3f2;
   font-size: clamp(20px, 4vw, 40px);
@@ -43,8 +45,6 @@ const TagLine = ({ screenWidth }) => {
         <Text style={{
           height: screenWidth < widthThreshold ? '20vh' : '40vh',
           justifyContent: screenWidth < widthThreshold ? 'center' : undefined,
-          marginLeft: screenWidth < widthThreshold ? undefined : '5%',
-          textAlign: screenWidth < widthThreshold ? 'center' : undefined,
         }}
         >
           Time-tested asset class.

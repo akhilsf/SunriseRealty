@@ -81,7 +81,7 @@ const Approach = ({ screenWidth }) => {
 
   return (
     <ApproachContainer>
-      {/* <Title>Rationale</Title> */}
+      <h1 style={{ marginTop: '1em', color: '#748a8b'}}>RATIONALE</h1>
       <LineBreak />
       {rationaleList.map((item) => (
         <>

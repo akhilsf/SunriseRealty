@@ -152,7 +152,7 @@ const Header = ({ screenWidth }) => {
           <NavLink
             activeClassName="active"
             className="link"
-            to="/invest-with-us"
+            to="/invest"
             id="invest"
             onClick={handleLinkClick}
           >
@@ -194,7 +194,7 @@ const Header = ({ screenWidth }) => {
         <Route path="/strategy">
           <Strategy screenWidth={screenWidth} />
         </Route>
-        <Route path="/invest-with-us">
+        <Route path="/invest">
           <InvestWithUs screenWidth={screenWidth} />
         </Route>
         <Route path="/contact">
