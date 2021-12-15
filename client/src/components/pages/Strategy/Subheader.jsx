@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const WhoContainer = styled.div`
+const ApproachContainer = styled.div`
   display: flex;
   background-color: rgb(245, 245, 245);
   flex-direction: column;
@@ -24,13 +24,13 @@ const Statement = styled.p`
   text-align: center;
 `;
 
-const WhoWeAre = () => (
-  <WhoContainer>
-    <Title>WHO WE ARE</Title>
+const Subheader = () => (
+  <ApproachContainer>
+    <Title>OUR APPROACH</Title>
     <Statement>
-      We are a group of a seasoned professionals with a track record of qualifying investments through detailed market analysis and financial modeling and meeting returns targets with commercial real estate
+      We acquire underperforming apartment communities in growing markets to provide investors cash flow, equity growth, and tax benefits
     </Statement>
-  </WhoContainer>
+  </ApproachContainer>
 );
 
-export default WhoWeAre;
+export default Subheader;

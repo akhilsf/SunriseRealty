@@ -10,7 +10,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 0 20px #000000;
   height: auto;
   width: 90%;
 `;

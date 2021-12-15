@@ -13,9 +13,10 @@ const Container = styled.h2`
 `;
 
 const SubHeader = ({ title }) => (
-  <Container>
-    {title}
-  </Container>
+  <></>
+  // <Container>
+  //   {title}
+  // </Container>
 );
 
 SubHeader.propTypes = {

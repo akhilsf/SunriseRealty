@@ -19,13 +19,12 @@ import { HeaderContainer, Hamburger, MenuLine } from './headerStyle';
 
 const FullScreenNav = {
   display: 'flex',
-  width: '30%',
+  alignItems: 'center',
+  width: '100%',
   justifyContent: 'space-evenly',
-  marginTop: '80px',
   marginRight: '5%',
   marginLeft: '5%',
   whiteSpace: 'nowrap',
-  fontSize: '20px',
 };
 
 const MinimizedNav = {
@@ -38,7 +37,6 @@ const MinimizedNav = {
   backgroundColor: '#fff',
   width: '100%',
   height: '12em',
-  fontSize: '20px',
   paddingBottom: '10px',
   textAlign: 'center',
   transition: '0.3s',
@@ -63,14 +61,20 @@ const Header = ({ screenWidth }) => {
   const [navStyle, setNavStyle] = useState(() => {});
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
+  const screenThreshold = 1400;
+
   useEffect(() => {
-    if (screenWidth > 1400) {
+    if (screenWidth > screenThreshold) {
       setNavStyle(FullScreenNav);
       closeHamburger();
       setHamburgerOpen(false);
     } else {
       setNavStyle(MinimizedNav);
     }
+
+
+    handleLinkClick();
+
   }, [screenWidth]);
 
   const handleHamburgerAction = () => {
@@ -83,20 +87,42 @@ const Header = ({ screenWidth }) => {
     }
   };
 
-  const handleLinkClick = () => {
-    closeHamburger();
-    setHamburgerOpen(false);
+  const handleLinkClick = (e) => {
+    if (hamburgerOpen) {
+      closeHamburger();
+      setHamburgerOpen(false);
+    }
+    let htmlCollection = document.getElementsByClassName('link')
+    let linksArray = Array.prototype.slice.call(htmlCollection);
+
+    linksArray.forEach((link) => {
+      link.style.fontWeight = "500";
+      link.style.color = "#4A5859"
+    })
+
+    let target = e ? e.target.id : window.location.pathname.split('/')[1];
+    if (!target) target = 'home';
+
+    document.getElementById(target).style.fontWeight = "900";
+    document.getElementById(target).style.color = "#85a7b1";
   };
 
   return (
     <Router>
       <HeaderContainer>
+        {<>{screenWidth <= screenThreshold ?
+            <a href="/home">
+              <Logo screenWidth={screenWidth} />
+            </a>
+            : null
+        }</>}
         <nav id="navbar" style={navStyle}>
           <NavLink
             activeClassName="active"
             className="link"
             to="/"
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
+            id="home"
+            onClick={handleLinkClick}
           >
             HOME
           </NavLink>
@@ -104,7 +130,8 @@ const Header = ({ screenWidth }) => {
             activeClassName="active"
             className="link"
             to="/team"
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
+            id="team"
+            onClick={handleLinkClick}
           >
             THE TEAM
           </NavLink>
@@ -112,25 +139,31 @@ const Header = ({ screenWidth }) => {
             activeClassName="active"
             className="link"
             to="/strategy"
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
+            id="strategy"
+            onClick={handleLinkClick}
           >
             STRATEGY
           </NavLink>
+          {<>{screenWidth <= screenThreshold ? null :
+                <a href="/home">
+                  <Logo screenWidth={screenWidth} />
+                </a>
+          }</>}
           <NavLink
             activeClassName="active"
             className="link"
-            to="/invest-with-us"
-            style={{ display: hamburgerOpen ? undefined : 'none' }}
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
+            to="/invest"
+            id="invest"
+            onClick={handleLinkClick}
           >
-            INVEST WITH US
+            INVEST
           </NavLink>
           <NavLink
             activeClassName="active"
             className="link"
             to="/contact"
-            style={{ display: hamburgerOpen ? undefined : 'none' }}
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
+            id="contact"
+            onClick={handleLinkClick}
           >
             CONTACT
           </NavLink>
@@ -138,45 +171,16 @@ const Header = ({ screenWidth }) => {
             activeClassName="active"
             className="link"
             to="/resources"
-            style={{ display: hamburgerOpen ? undefined : 'none' }}
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
+            id="resources"
+            onClick={handleLinkClick}
           >
-            RESOURCES
-          </NavLink>
-        </nav>
-        <a href="/home">
-          <Logo screenWidth={screenWidth} />
-        </a>
-        <nav id="navbar" style={navStyle}>
-          <NavLink
-            activeClassName="active"
-            className="link"
-            to="/invest-with-us"
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
-          >
-            INVEST WITH US
-          </NavLink>
-          <NavLink
-            activeClassName="active"
-            className="link"
-            to="/contact"
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
-          >
-            CONTACT
-          </NavLink>
-          <NavLink
-            activeClassName="active"
-            className="link"
-            to="/resources"
-            onClick={hamburgerOpen ? handleLinkClick : undefined}
-          >
-            RESOURCES
+            FAQs
           </NavLink>
         </nav>
         <Hamburger
           data-testid="hamburger"
           onClick={handleHamburgerAction}
-          style={{ display: screenWidth > 1400 ? 'none' : undefined }}
+          style={{ display: screenWidth > screenThreshold ? 'none' : undefined }}
         >
           <MenuLine id="ham1" style={{ width: '35px' }} />
           <MenuLine id="ham2" style={{ width: '25px', alignSelf: 'flex-end' }} />
@@ -190,7 +194,7 @@ const Header = ({ screenWidth }) => {
         <Route path="/strategy">
           <Strategy screenWidth={screenWidth} />
         </Route>
-        <Route path="/invest-with-us">
+        <Route path="/invest">
           <InvestWithUs screenWidth={screenWidth} />
         </Route>
         <Route path="/contact">

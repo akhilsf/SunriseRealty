@@ -4,32 +4,15 @@ import styled from 'styled-components';
 import FAQ from './FAQ';
 
 const Container = styled.main`
-  background-color: #4d6374;
+  background-color: rgb(245, 245, 245);
   padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  box-shadow: inset 0 0 20px #000000;
 `;
-
-// const FAQ = styled.div`
-//   display: flex;
-//   width: 80%;
-//   flex-direction: column;
-//   font-size: clamp(15px, 2vw, 30px);
-// `;
-
-// const Question = styled.h2`
-//   text-transform: uppercase;
-//   margin-bottom: 2%;
-//   color: #E1D9D1;
-//   font-size: 1em;
-// `;
 
 const Response = styled.p`
   font-size: .8em;
-  color: white;
 `;
 
 const ResponseList = styled.ul`
@@ -39,16 +22,8 @@ const ResponseList = styled.ul`
 
 const ResponseListItem = styled.li`
   list-style-type: '~  ';
-  color: white;
   font-size: .8em;
   margin-bottom: 2%;
-`;
-
-const LineBreak = styled.span`
-  display: block;
-  width: 90%;
-  height: 1px;
-  background-color: #94999a;
 `;
 
 const FAQList = () => {
@@ -72,39 +47,39 @@ const FAQList = () => {
       answer:
   <ResponseList>
     <ResponseListItem>
-      <u style={{ color: 'white' }}>Cash Flow:</u>
+      <u>Cash Flow:</u>
       {' '}
-      All properties that we invest in provide sufficient cash flow to serve as a hedge against unforeseen but inevitable expenses.
+      All properties that we invest in provide sufficient cash flow to cover unpredictable but inevitable expenses.
     </ResponseListItem>
     <ResponseListItem>
-      <u style={{ color: 'white' }}>Economies of Scale:</u>
+      <u>Economies of Scale:</u>
       {' '}
-      Relative to smaller rental property investments, per unit-operational costs are lower, which improves margins.
+      Relative to smaller rental property investments, per unit-operational costs are lower, which improve margins.
     </ResponseListItem>
     <ResponseListItem>
-      <u style={{ color: 'white' }}>Forced Appreciation:</u>
+      <u>Forced Appreciation:</u>
       {' '}
-      Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drives commercial real estate valuation.
+      Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drive commercial real estate valuation.
     </ResponseListItem>
     <ResponseListItem>
-      <u style={{ color: 'white' }}>Lower Vacancy Risk:</u>
+      <u>Lower Vacancy Risk:</u>
       {' '}
       Large apartments are much less exposed to vacancy risk relative to smaller rental properties, given each unit is a much smaller percentage of the total number of units. For example, a vacant single family home yields no income; this is a near-impossible scenario for a large apartment.
     </ResponseListItem>
     <ResponseListItem>
-      <u style={{ color: 'white' }}>Macro Trends:</u>
+      <u>Macro Trends:</u>
       {' '}
       The U.S. is increasingly becoming a nation of renters, as fewer and fewer people are committing to purchasing their own homes.
     </ResponseListItem>
     <ResponseListItem>
-      <u style={{ color: 'white' }}>Market Resilience:</u>
+      <u>Market Resilience:</u>
       {' '}
       A roof to live under is a basic human need, unlike other forms of commercial real estate. Moreover, during recessions people often downsize into less-expensive apartments. This  is why Sunrise Realty Investments targets quality apartments with value-add potential versus turn-key, new-build apartments.
     </ResponseListItem>
     <ResponseListItem>
-      <u style={{ color: 'white' }}>Tax Benefits:</u>
+      <u>Tax Benefits:</u>
       {' '}
-      Due to their size, there is greater opportunity to benefit from depreciation strategies that ultimately improve investors&apos; net income.
+      Due to the scale of large apartments, there is greater opportunity to benefit from depreciation strategies that ultimately improve investor net returns.
     </ResponseListItem>
   </ResponseList>,
     },
@@ -119,16 +94,16 @@ const FAQList = () => {
       question: 'How do I get paid?',
       answer:
   <Response>
-    If you choose to invest in a deal with Sunrise Realty Investments, you will be paid through regular cash distributions and through a lump sum payout at the end of the deal cycle. Furthermore, we ensure our investors get paid first in accordance with pre-defined, preferred returns and profit splits.
+    If you choose to invest in a deal with Sunrise Realty Investments, you will be paid through regular cash distributions and a lump sum payout at the end of the deal cycle.
   </Response>,
     },
     {
       question: 'What fees do I pay in order to invest with Sunrise Realty Investments?',
       answer:
   <Response>
-    Many syndicators charge a slew of fees to investors, including acquisition fees, asset management fees, refinancing fees, capital transaction fees, and many others. At Sunrise Realty Investments, we value alignment of interests, and therefore we only charge a nominal, market-parity acquisition fee and asset management fee. Furthermore, we only take profit splits and asset management fee
+    Many syndicators charge a slew of fees to investors, including refinancing fees and capital transaction fees; however, we do not believe this model aligns with our mission. At Sunrise Realty Investments, we value alignment of interests, and therefore we only charge a nominal, market-parity acquisition fee and asset management fee.
     {' '}
-    <u style={{ color: 'white' }}>after</u>
+    <u>after</u>
     {' '}
     investor return targets are met
   </Response>,
@@ -137,7 +112,7 @@ const FAQList = () => {
       question: 'What are the biggest risks I should be aware of? How do you mitigate these risks?',
       answer:
   <Response>
-    With any deal, the biggest risk factors are the market, the deal, and the team. We mitigate these risks through a disciplined, robust approach to market selection and apartment selection. Additionally, we always use a conservative underwriting process to value properties based on known performance metrics versus future, expected performance metrics and complement that with a rigorous, months-long due diligence period. We always incorporate a healthy operating and contingency budget to cover any unexpected dips in occupancy, lower than projected rent premiums, or unexpected costs. Furthermore, our team comes with a wealth of experience that is bolstered by a team of mentors with decades of apartment investing experience.
+    With any deal, the biggest risk factors are the market, the deal, and the team. We mitigate these risks through a disciplined, robust approach to market selection and apartment selection. Additionally, we always use a conservative underwriting process to value properties based on known performance metrics versus future, expected performance metrics and complement that with a rigorous, months-long due diligence period. We always incorporate a healthy operating and contingency budget to cover any unexpected dips in occupancy, lower than projected rent premiums, or unexpected costs. Furthermore, our team further mitigates risk by regularly seeking counsel from mentors with decades of apartment investing experience.
   </Response>,
     },
     {
@@ -179,7 +154,7 @@ const FAQList = () => {
       question: 'If I make the decision to invest in deal with Sunrise Realty Investments, what should I expect next?',
       answer:
   <Response>
-    First, if you haven&apos;t already, please contact us to join our private email list through the INVEST WITH US page. If you meet your investor criteria, you will be added to our mailing list and be notified of potential deals. Once a deal is under contract, you would be invited to an investment offering conference call. During this call, you would learn about deal-specifics and the business plan. Following this call, you may verbally commit to invest in the deal and officially commit by signing the required documentation.
+    First, if you haven&apos;t already, please contact us to join our private email list through the INVEST page. If you meet your investor criteria, you will be added to our mailing list and be notified of potential deals. Once a deal is under contract, you would be invited to an investment offering conference call. During this call, you would learn about deal-specifics and the business plan. Following this call, you may verbally commit to invest in the deal and officially commit by signing the required documentation.
   </Response>,
     },
     {
@@ -196,7 +171,6 @@ const FAQList = () => {
       {QAs.map((qa) => (
         <FAQ question={qa.question} answer={qa.answer} />
       ))}
-      <LineBreak />
     </Container>
   );
 };

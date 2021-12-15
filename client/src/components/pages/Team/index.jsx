@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import SubHeader from '../../shared/SubHeader';
 import BioFeed from './BioFeed';
 import Links from './Links';
 import WhoWeAre from './WhoWeAre';
@@ -14,7 +13,6 @@ const Contents = styled.div`
 
 const Team = ({ screenWidth }) => (
   <Contents>
-    <SubHeader title="The Team" />
     <WhoWeAre />
     <BioFeed screenWidth={screenWidth} />
     <Links />

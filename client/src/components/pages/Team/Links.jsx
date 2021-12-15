@@ -6,17 +6,16 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(assets/white-lines.jpeg);
-  background-color: rgb(231, 229, 222);
-  background-size: cover;
+  background-color: rgb(245, 245, 245);
   padding: 5%;
   height: 400px;
 `;
 
-const Statement = styled.p`
+const Statement = styled.h2`
   margin: 5px;
-  font-size: 24px;
-  font-weight: 500;
+  color: #748a8b;
+  text-transform: uppercase;
+  // font-weight: 500;
   text-align: center;
 `;
 
@@ -28,7 +27,6 @@ const Button = styled.a`
   padding-right: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 20px;
   cursor: pointer;
   background-color: transparent;
   transition: all 0.2s;

@@ -51,15 +51,15 @@ const Approach = ({ screenWidth }) => {
   const rationaleList = [
     {
       rationale: 'Cash Flow',
-      description: 'All properties that we invest in provide sufficient cash flow to serve as a hedge against unforeseen but inevitable expenses.',
+      description: 'All properties that we invest in provide sufficient cash flow to cover unpredictable but inevitable expenses.',
     },
     {
       rationale: 'Economies of Scale',
-      description: 'Relative to smaller rental property investments, per unit-operational costs are lower, which improves margins.',
+      description: 'Relative to smaller rental property investments, per unit-operational costs are lower, which improve margins.',
     },
     {
       rationale: 'Forced Appreciation',
-      description: 'Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drives commercial real estate valuation.',
+      description: 'Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drive commercial real estate valuation.',
     },
     {
       rationale: 'Lower Vacancy Risk',
@@ -75,13 +75,13 @@ const Approach = ({ screenWidth }) => {
     },
     {
       rationale: 'Tax Benefits',
-      description: 'Due to their size, there is greater opportunity to benefit from depreciation strategies that ultimately improve investors\' net income.',
+      description: 'Due to the scale of large apartments, there is greater opportunity to benefit from depreciation strategies that ultimately improve investor net returns.',
     },
   ];
 
   return (
     <ApproachContainer>
-      {/* <Title>Rationale</Title> */}
+      <h1 style={{ marginTop: '1em', color: '#748a8b'}}>RATIONALE</h1>
       <LineBreak />
       {rationaleList.map((item) => (
         <>

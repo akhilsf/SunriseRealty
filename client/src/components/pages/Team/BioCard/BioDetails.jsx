@@ -17,6 +17,7 @@ const Name = styled.h2`
 
 const Title = styled.h4`
   color: white;
+  font-weight: 400;
   font-style: italic;
 `;
 

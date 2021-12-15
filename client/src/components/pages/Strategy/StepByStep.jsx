@@ -17,7 +17,6 @@ const Container = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 0 20px #000000;
 `;
 
 const StepContainer = styled.div`
@@ -33,24 +32,22 @@ const StepContainer = styled.div`
 const StepDetails = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: clamp(15px, 2vw, 30px);
   margin-left: 10%;
   margin-right: 10%;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   text-transform: uppercase;
   text-align: center;
   color: white;
-  font-size: 2em;
-  margin-bottom: 1em;
+  margin: 1em 0 1em 0;
 `;
 
 const DescriptionList = styled.ul``;
 
 const Description = styled.li`
-  list-style-type: '~  ';
-  font-size: 1em;
+  list-style-type: '~ ';
+  font-size: clamp(15px, 4vw, 30px);
   margin-bottom: 2%;
   color: white;
 `;
@@ -78,11 +75,11 @@ const StepByStep = ({ screenWidth }) => {
 
   useEffect(() => {
     if (screenWidth < 500) {
-      setIconSize(150);
+      setIconSize(100);
     } else if (screenWidth < 1000) {
-      setIconSize(200);
+      setIconSize(150);
     } else {
-      setIconSize(300);
+      setIconSize(250);
     }
   }, [screenWidth])
 
@@ -93,7 +90,7 @@ const StepByStep = ({ screenWidth }) => {
       description:
   <>
     <Description>
-      We select markets that meet specific criteria, such as a large, growing population,  substantial job diversity, decreasing or flat unemployment, and a healthy balance of  supply and demand.
+      We select markets that meet specific criteria, such as a large, growing population, substantial job diversity, decreasing or flat unemployment, and a healthy balance of supply and demand.
     </Description>
   </>,
     },
@@ -132,10 +129,10 @@ const StepByStep = ({ screenWidth }) => {
       description:
   <>
     <Description>
-      Open deal close, we immediately begin executing  our business plan, adding immediate value through improved income or reduced expenses.
+      Open deal close, we immediately begin executing our business plan to through improved income or reduced expenses.
     </Description>
     <Description>
-      The property generates cash flow on a monthly basis, which are distributed to investors at a regular cadence.
+      Cash flow is distributed to investors at a regular cadence.
     </Description>
     <Description>
       Throughout the deal cycle, we ensure that we are constantly available to answer any and all questions our investors may have and that we provide consistent, transparent communication through structured, detailed updates.
@@ -148,7 +145,7 @@ const StepByStep = ({ screenWidth }) => {
       description:
   <>
     <Description>
-      At the end of the deal cycle, which is informed by the business plan, investor return goals, or market conditions, the property is either refinanced or sold to return a lump sum payout to investors.  In the scenario that the property is refinanced, investors continue to participate in cash flow distributions and equity growth.
+      At the end of the deal cycle, which is informed by the business plan, investor return goals, and / or market conditions, the property is either refinanced or sold to return a lump sum payout to investors. In the scenario that the property is refinanced, investors continue to participate in cash flow distributions and equity growth.
     </Description>
   </>,
     },
@@ -156,7 +153,6 @@ const StepByStep = ({ screenWidth }) => {
 
   return (
     <Container>
-      {/* <LineBreak /> */}
       {steps.map((step) => (
         <>
           <StepContainer>
@@ -168,7 +164,6 @@ const StepByStep = ({ screenWidth }) => {
               </DescriptionList>
             </StepDetails>
           </StepContainer>
-          {/* <LineBreak /> */}
         </>
       ))}
     </Container>
