@@ -8,7 +8,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgb(245, 245, 245);
-  padding: 5%;
+  padding: min(10vw, 100px);
   height: auto;
 `;
 
@@ -19,14 +19,16 @@ const Title = styled.h1`
 
 const Statement = styled.p`
   margin-top: 25px;
-  font-size: clamp(15px, 4vw, 30px);
+  font-size: min(5vw, 30px);
   text-align: center;
 `;
 
 const ValueAddContainer = styled.div`
   display: flex;
-  margin: 5%;
+  text-align: center;
+  margin: 2.5%;
   flex-direction: column;
+  font-size: clamp(15px, 2vw, 20px);
 `;
 
 const ValueAddList = styled.ul`
@@ -42,6 +44,7 @@ const ValueAddItem = styled.li`
 
 const More = styled.a`
   border: 3px solid #4A5859;
+  margin-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 15px;
@@ -68,18 +71,7 @@ const LearnMore = () => (
     </Statement>
     <br />
     <ValueAddContainer>
-      <ValueAddList>
-        <ValueAddItem>Quality, safe living conditions for tenants</ValueAddItem>
-        <ValueAddItem>Maximized investor returns through optimized income and operation efficiency</ValueAddItem>
-      </ValueAddList>
-      <ValueAddList>
-        <ValueAddItem>Deal cycles lasting between 3 to 5 years with cash flow distributions throughout</ValueAddItem>
-        <ValueAddItem>Large payouts at the end of deal cycles either through a sale or refinancing</ValueAddItem>
-      </ValueAddList>
-      <ValueAddList>
-        <ValueAddItem>Highly accessible deal team throughout the holding period and beyond</ValueAddItem>
-        <ValueAddItem>Consistent, transparent communication with structured, detailed updates</ValueAddItem>
-      </ValueAddList>
+      We pride ourselves in providing quality, safe living conditions for tenants while optimizing income and operational efficiency to maximize investor returns. Our deal cycles typically last between 3 to 5 years and include cash flow distributions throughout; at the end of the cycle we sell or refinance to deliver large payouts to investors. Throughout the holding period and beyond, investors can expect constant accessibility to the team and consistent, transparent communication through structured, detailed updates.
     </ValueAddContainer>
     <More href="/strategy">
       LEARN MORE ABOUT OUR STRATEGY
@@ -98,3 +90,17 @@ export default LearnMore;
 // Large payouts at the end of deal cycles either through a sale or refinancing
 // Highly accessible deal team throughout the holding period and beyond
 // Consistent, transparent communication with structured, detailed updates
+
+{/* <ValueAddList>
+<ValueAddItem>Quality, safe living conditions for tenants</ValueAddItem>
+<ValueAddItem>Maximized investor returns through optimized income and operation efficiency</ValueAddItem>
+</ValueAddList>
+<ValueAddList>
+<ValueAddItem>Deal cycles lasting between 3 to 5 years with cash flow distributions throughout</ValueAddItem>
+<ValueAddItem>Large payouts at the end of deal cycles either through a sale or refinancing</ValueAddItem>
+</ValueAddList>
+<ValueAddList>
+<ValueAddItem>Highly accessible deal team throughout the holding period and beyond</ValueAddItem>
+<ValueAddItem>Consistent, transparent communication with structured, detailed updates</ValueAddItem>
+</ValueAddList>
+*/}

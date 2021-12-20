@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 25px;
   background-color: rgb(245, 245, 245);
 `;
 
@@ -25,7 +24,7 @@ const TagLineContainer = styled.div`
   margin-left: 5%;
   align-items: center;
   color: #f5f3f2;
-  font-size: clamp(20px, 4vw, 40px);
+  font-size: clamp(25px, 4vw, 40px);
   font-family: 'Futura', sans-serif;
 `;
 
@@ -35,15 +34,15 @@ const TagLine = ({ screenWidth }) => {
   return (
     <Container style={{
       flexDirection: screenWidth < widthThreshold ? 'column' : undefined,
-      height: screenWidth < widthThreshold ? '45vh' : undefined,
+      // height: screenWidth < widthThreshold ? '45vh' : undefined,
     }}
     >
       <TagLineContainer style={{
-        width: screenWidth < widthThreshold ? '100%' : '48%',
+        width: screenWidth < widthThreshold ? '100%' : '50%',
       }}
       >
         <Text style={{
-          height: screenWidth < widthThreshold ? '20vh' : '40vh',
+          height: screenWidth < widthThreshold ? '30vh' : '60vh',
           justifyContent: screenWidth < widthThreshold ? 'center' : undefined,
         }}
         >
@@ -56,8 +55,8 @@ const TagLine = ({ screenWidth }) => {
       <Pic
         src="assets/homePhoto.jpeg"
         style={{
-          width: screenWidth < widthThreshold ? undefined : '48%',
-          height: screenWidth < widthThreshold ? '20vh' : '40vh',
+          width: screenWidth < widthThreshold ? undefined : '50%',
+          height: screenWidth < widthThreshold ? '30vh' : '60vh',
         }}
       />
     </Container>

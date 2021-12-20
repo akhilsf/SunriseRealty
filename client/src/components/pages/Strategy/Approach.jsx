@@ -51,15 +51,15 @@ const Approach = ({ screenWidth }) => {
   const rationaleList = [
     {
       rationale: 'Cash Flow',
-      description: 'All properties that we invest in provide sufficient cash flow to cover unpredictable but inevitable expenses.',
+      description: 'Our approach maximizes cash flow to cover the unpredictable but inevitable expenses and yield a healthy cash-on-cash return for investors.',
     },
     {
       rationale: 'Economies of Scale',
-      description: 'Relative to smaller rental property investments, per unit-operational costs are lower, which improve margins.',
+      description: 'Relative to smaller rental property investments, per unit-operational costs are lower.',
     },
     {
       rationale: 'Forced Appreciation',
-      description: 'Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drive commercial real estate valuation.',
+      description: 'Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drives commercial real estate valuation.',
     },
     {
       rationale: 'Lower Vacancy Risk',
@@ -67,11 +67,11 @@ const Approach = ({ screenWidth }) => {
     },
     {
       rationale: 'Macro Trends',
-      description: 'The U.S. is increasingly becoming a nation of renters, as fewer and fewer people are committing to purchasing their own homes.',
+      description: 'The U.S. is increasingly becoming a nation of renters, as fewer and fewer people are committing to purchasing their own homes. Furthermore, increasing population density and changing demographic preferences are accelerating tenant absorption into larger apartments.',
     },
     {
       rationale: 'Market Resilience',
-      description: 'A roof to live under is a basic human need, unlike other forms of commercial real estate. Moreover, during recessions people often downsize into less-expensive apartments. This  is why Sunrise Realty Investments targets quality apartments with value-add potential versus turn-key, new-build apartments.',
+      description: 'A roof to live under is a basic human need, unlike other forms of commercial real estate. Moreover, during recessions people often downsize into less-expensive apartments. Sunrise Realty Investments targets quality apartments with value-add potential versus turn-key, new-build apartments.',
     },
     {
       rationale: 'Tax Benefits',
@@ -81,7 +81,7 @@ const Approach = ({ screenWidth }) => {
 
   return (
     <ApproachContainer>
-      <h1 style={{ marginTop: '1em', color: '#748a8b'}}>RATIONALE</h1>
+      <h1 style={{ marginTop: '1em', color: '#748a8b'}}>WHY UNDERPEFORMING APARTMENT COMMUNITIES?</h1>
       <LineBreak />
       {rationaleList.map((item) => (
         <>

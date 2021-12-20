@@ -100,7 +100,7 @@ const StepByStep = ({ screenWidth }) => {
       description:
   <>
     <Description>
-      Within selected markets, we screen and underwrite dozens of properties against target return metrics and other specific criteria before identifying a property that we feel is worth pursuing an offer on.
+      Within selected markets, we screen and underwrite dozens of properties against target return metrics and other specific criteria before identifying properties that we feel are worth pursuing an offer on.
     </Description>
     <Description>
       Apartments that we submit offers on always have ample opportunity to force appreciation and improve cash flow through physical enhancements or operational improvements.
@@ -113,7 +113,7 @@ const StepByStep = ({ screenWidth }) => {
       description:
   <>
     <Description>
-      Once an offer is accepted, we undergo months of due diligence to confirm our underwriting assumptions and obtain third-party perspectives from our on-the-ground expert partners.
+      Once an offer is accepted, we undergo months of due diligence to confirm our underwriting assumptions and obtain third-party perspectives from our on-the-ground, expert partners.
     </Description>
     <Description>
       Based on our due diligence, we may move forward with the deal, refine our offer, or walk away from the deal.
@@ -129,13 +129,13 @@ const StepByStep = ({ screenWidth }) => {
       description:
   <>
     <Description>
-      Open deal close, we immediately begin executing our business plan to through improved income or reduced expenses.
+      Upon deal close, we immediately begin executing our business plan to improve income and / or reduce expenses.
     </Description>
     <Description>
       Cash flow is distributed to investors at a regular cadence.
     </Description>
     <Description>
-      Throughout the deal cycle, we ensure that we are constantly available to answer any and all questions our investors may have and that we provide consistent, transparent communication through structured, detailed updates.
+      Throughout the deal cycle, we maintain a constant line of communication for investors and provide regular, structured, and detailed updates.
     </Description>
   </>,
     },
@@ -145,7 +145,7 @@ const StepByStep = ({ screenWidth }) => {
       description:
   <>
     <Description>
-      At the end of the deal cycle, which is informed by the business plan, investor return goals, and / or market conditions, the property is either refinanced or sold to return a lump sum payout to investors. In the scenario that the property is refinanced, investors continue to participate in cash flow distributions and equity growth.
+      At the end of the deal cycle, investor return goals, and / or market conditions, the property is either refinanced or sold to return a lump sum payout to investors. In the scenario that the property is refinanced, investors continue to participate in cash flow distributions and equity growth.
     </Description>
   </>,
     },
