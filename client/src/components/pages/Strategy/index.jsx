@@ -34,7 +34,6 @@ const Title = styled.h1`
 `;
 
 const Statement = styled.p`
-  margin: 50px 0 50px 0;
   font-size: clamp(15px, 4vw, 30px);
   text-align: center;
 `;
@@ -56,14 +55,22 @@ const Strategy = ({ screenWidth }) =>{
 
   return (
     <Contents>
-      <SectionContainer onClick={() => handleSectionClick('Approach')}>
+      <SectionContainer onClick={() => handleSectionClick('Approach')}
+        style={{
+          backgroundColor: isApproachOpen ? 'rgb(220, 220, 220)' : undefined,
+        }}
+      >
         <Title>APPROACH</Title>
         <Statement>
           We acquire underperforming apartment communities in growing markets to provide investors cash flow, equity growth, and tax benefits.
         </Statement>
       </SectionContainer>
       {isApproachOpen ? <Approach screenWidth={screenWidth} /> : null}
-      <SectionContainer onClick={() => handleSectionClick('Rationale')}>
+      <SectionContainer onClick={() => handleSectionClick('Rationale')}
+        style={{
+          backgroundColor: isRationaleOpen ? 'rgb(220, 220, 220)' : undefined,
+        }}
+      >
         <Title>WHY UNDERPEFORMING APARTMENT COMMUNITIES?</Title>
       </SectionContainer>
       {isRationaleOpen ? <Rationale screenWidth={screenWidth} /> : null}

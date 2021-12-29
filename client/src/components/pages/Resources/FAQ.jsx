@@ -20,21 +20,32 @@ const Container = styled.div`
 `;
 
 const QuestionBlock = styled.div`
-  width: 80%;
+  display: flex;
+  align-items: center;
+  width: 100%;
   cursor: pointer;
 `;
 
 const Question = styled.h2`
   text-transform: uppercase;
+  margin-left: 10%;
+  width: 90%;
   margin-top: 2%;
   margin-bottom: 2%;
   color: #748a8b;
-  font-size: 1em;
+  font-size: .8em;
   transition: color 0.75s;
 `;
 
+const Button = styled.div`
+  text-align: center;
+  float: right;
+  width: 20%;
+  color: #748a8b;
+`;
+
 const Answer = styled.div`
-  width: 90%;
+  width: 80%;
   transition: margin-top 0.75s, margin-bottom 0.75s;
 `;
 
@@ -57,6 +68,10 @@ const FAQ = ({ question, answer }) => {
             {' '}
             {question}
           </Question>
+          <Button>
+            {isOpen ? '-' : '+'}
+          </Button>
+        </QuestionBlock>
           <Answer style={{
             height: isOpen ? 'auto' : '0px',
             margin: isOpen ? '5%' : 0,
@@ -65,7 +80,6 @@ const FAQ = ({ question, answer }) => {
           >
             {answer}
           </Answer>
-        </QuestionBlock>
       </Container>
     </>
   );

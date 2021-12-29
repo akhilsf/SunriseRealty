@@ -58,6 +58,10 @@ const Form = ({ screenWidth }) => (
       <p style={{ textAlign: 'center', fontWeight: '400', fontSize: 'clamp(15px, 2vw, 30px)' }}>
         Fill out our form and we&apos;ll get back to you!
       </p>
+      <br/>
+      <p style={{ textAlign: 'center', fontWeight: '200', fontSize: 'clamp(10px, 1vw, 15px)' }}>
+        (If form does not load, send use note at <a href="mailto:anish@sunriserealty.io" style={{ all: 'revert', }}>anish@sunriserealty.io</a>)
+      </p>
     </LeftSideContainer>
     <GoogleFormContainer style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSddJlUyd5KSv7USSpvZLNc8ZEZxWQqQBQHkPMI4k1tzhkgkeg/viewform?embedded=true"  width="640" height="2000" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>

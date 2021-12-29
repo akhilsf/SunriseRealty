@@ -4,27 +4,29 @@ import styled from 'styled-components';
 
 const MissionContainer = styled.div`
   display: flex;
-  background-color: rgb(245, 245, 245);
+  background-color: #4d6374;
   flex-direction: column;
   justify-content: center;
   padding: min(10vw, 100px);
   align-items: center;
-  height: auto;
+  height: max(10vh, auto);
 `;
 
 const Title = styled.h1`
   display: block;
-  color: #748a8b;
+  // color: #748a8b;
+  color: white;
 `;
 
 const Statement = styled.p`
   margin: 25px 0 50px 0;
   font-size: min(5vw, 30px);
   text-align: center;
+  color: white;
 `;
 
 const About = styled.a`
-  border: 3px solid #4A5859;
+  border: 3px solid white;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 15px;
@@ -32,10 +34,12 @@ const About = styled.a`
   cursor: pointer;
   background-color: transparent;
   transition: all 0.2s;
+  color: white;
 
   &:hover {
-    background-color: #4A5859;
-    color: white;
+    // background-color: #4A5859;
+    background-color: white;
+    color: #748a8b;
   }
 
 `;
