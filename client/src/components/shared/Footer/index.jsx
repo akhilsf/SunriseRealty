@@ -10,7 +10,7 @@ const Footer = () => {
       <Logo screenWidth={screenWidth} />
       <LinksContainer>
         <Link href="/home">HOME</Link>
-        <Link href="/about">ABOUT</Link>
+        <Link href="/team">THE TEAM</Link>
         <Link href="/strategy">STRATEGY</Link>
         <Link href="/invest">INVEST</Link>
         <Link href="/contact">CONTACT</Link>

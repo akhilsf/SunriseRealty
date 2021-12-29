@@ -1,105 +1,177 @@
-import React from 'react';
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable semi */
+/* eslint-disable max-len */
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { MagnifyingGlass } from '@styled-icons/open-iconic/MagnifyingGlass';
+import { TargetArrow } from '@styled-icons/fluentui-system-filled/TargetArrow';
+import { Steps } from '@styled-icons/fluentui-system-filled/Steps';
+import { TorsoBusiness } from '@styled-icons/foundation/TorsoBusiness';
+import { Sell } from '@styled-icons/material-twotone/Sell'
 
-const ApproachContainer = styled.div`
-  display: flex;
-  background-color: rgb(245, 245, 245);
-  flex-direction: column;
-  justify-content: center;
+const Container = styled.main`
+  background-color: #4d6374;
   padding: 2%;
-  align-items: center;
-  border-bottom: 1px solid rgba(200,200,200);
-  height: auto;
-`;
-
-const RationaleContainer = styled.div`
-  margin-bottom: 2%;
-  margin-top: 2%;
-  width: 80%;
   display: flex;
-  font-size: clamp(15px, 2vw, 24px);
-  flex-direction: ${(props) => (props.screenWidth < 1250 ? 'column' : 'row')};
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
-const RationaleTitle = styled.h3`
-  display: block;
-  color: #748a8b;
-  width: 60%;
-  font-size: 1em;
+const StepContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px;
+  height: auto;
+  color: white;
+`;
+
+const StepDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+`;
+
+const Title = styled.h1`
+  text-transform: uppercase;
   text-align: center;
+  color: white;
+  margin: 1em 0 1em 0;
 `;
 
-const LineBreak = styled.span`
-  display: block;
-  width: 90vw;
-  height: 1px;
-  margin: clamp(10px, 5%, 20px);
-  background-color: #748a8b;
+const DescriptionList = styled.ul``;
+
+const Description = styled.li`
+  list-style-type: '➤  ';
+  font-size: clamp(15px, 4vw, 30px);
+  margin-bottom: 2%;
+  color: white;
 `;
 
-const Statement = styled.p`
-  font-size: 1em;
-  font-weight: 500;
-  text-align: center;
-  width: 80vw;
-  text-align: ${(props) => (props.screenWidth < 1250 ? 'center' : 'left')}
-`;
+const Icons = {
+  MagnifyingGlass: styled(MagnifyingGlass)`
+    color: #bababa;
+  `,
+  TargetArrow: styled(TargetArrow)`
+    color: #bababa;
+  `,
+  Steps: styled(Steps)`
+    color: #bababa;
+  `,
+  TorsoBusiness: styled(TorsoBusiness)`
+    color: #bababa;
+  `,
+  Sell: styled(Sell)`
+    color: #bababa;
+  `,
+};
 
-const Approach = ({ screenWidth }) => {
-  const rationaleList = [
+const StepByStep = ({ screenWidth }) => {
+  const [iconSize, setIconSize] = useState(0);
+
+  useEffect(() => {
+    if (screenWidth < 500) {
+      setIconSize(100);
+    } else if (screenWidth < 1000) {
+      setIconSize(150);
+    } else {
+      setIconSize(250);
+    }
+  }, [screenWidth])
+
+  const steps = [
     {
-      rationale: 'Cash Flow',
-      description: 'Our approach maximizes cash flow to cover the unpredictable but inevitable expenses and yield a healthy cash-on-cash return for investors.',
+      stepIcon: <Icons.MagnifyingGlass size={iconSize} />,
+      stepTitle: 'Market Selection',
+      description:
+  <>
+    <Description>
+      We select markets that meet specific criteria, such as a large, growing population, substantial job diversity, decreasing or flat unemployment, and a healthy balance of supply and demand.
+    </Description>
+  </>,
     },
     {
-      rationale: 'Economies of Scale',
-      description: 'Relative to smaller rental property investments, per unit-operational costs are lower.',
+      stepIcon: <Icons.TargetArrow size={iconSize} />,
+      stepTitle: 'Apartment Selection',
+      description:
+  <>
+    <Description>
+      Within selected markets, we screen and underwrite dozens of properties against target return metrics and other specific criteria before identifying properties that we feel are worth pursuing an offer on.
+    </Description>
+    <Description>
+      Apartments that we submit offers on always have ample opportunity to force appreciation and improve cash flow through physical enhancements or operational improvements.
+    </Description>
+  </>,
     },
     {
-      rationale: 'Forced Appreciation',
-      description: 'Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drives commercial real estate valuation.',
+      stepIcon: <Icons.Steps size={iconSize} />,
+      stepTitle: 'Acquisition Process',
+      description:
+  <>
+    <Description>
+      Once an offer is accepted, we undergo months of due diligence to confirm our underwriting assumptions and obtain third-party perspectives from our on-the-ground, expert partners.
+    </Description>
+    <Description>
+      Based on our due diligence, we may move forward with the deal, refine our offer, or walk away from the deal.
+    </Description>
+    <Description>
+      In advance of a deal close, we develop a comprehensive business plan to ensure we meet investor goals and have clear directives for our on-the-ground partners.
+    </Description>
+  </>,
     },
     {
-      rationale: 'Lower Vacancy Risk',
-      description: 'Large apartments are much less exposed to vacancy risk relative to smaller rental properties, given each unit is a much smaller percentage of the total number of units. For example, a vacant single family home yields no income; this is a near-impossible scenario for a large apartment.',
+      stepIcon: <Icons.TorsoBusiness size={iconSize} />,
+      stepTitle: 'Asset Management',
+      description:
+  <>
+    <Description>
+      Upon deal close, we immediately begin executing our business plan to improve income and / or reduce expenses.
+    </Description>
+    <Description>
+      Cash flow is distributed to investors at a regular cadence.
+    </Description>
+    <Description>
+      Throughout the deal cycle, we maintain a constant line of communication for investors and provide regular, structured, and detailed updates.
+    </Description>
+  </>,
     },
     {
-      rationale: 'Macro Trends',
-      description: 'The U.S. is increasingly becoming a nation of renters, as fewer and fewer people are committing to purchasing their own homes. Furthermore, increasing population density and changing demographic preferences are accelerating tenant absorption into larger apartments.',
-    },
-    {
-      rationale: 'Market Resilience',
-      description: 'A roof to live under is a basic human need, unlike other forms of commercial real estate. Moreover, during recessions people often downsize into less-expensive apartments. Sunrise Realty Investments targets quality apartments with value-add potential versus turn-key, new-build apartments.',
-    },
-    {
-      rationale: 'Tax Benefits',
-      description: 'Due to the scale of large apartments, there is greater opportunity to benefit from depreciation strategies that ultimately improve investor net returns.',
+      stepIcon: <Icons.Sell size={iconSize} />,
+      stepTitle: 'Exit',
+      description:
+  <>
+    <Description>
+      At the end of the deal cycle, investor return goals, and / or market conditions, the property is either refinanced or sold to return a lump sum payout to investors. In the scenario that the property is refinanced, investors continue to participate in cash flow distributions and equity growth.
+    </Description>
+  </>,
     },
   ];
 
   return (
-    <ApproachContainer>
-      <h1 style={{ marginTop: '1em', color: '#748a8b'}}>WHY UNDERPEFORMING APARTMENT COMMUNITIES?</h1>
-      <LineBreak />
-      {rationaleList.map((item) => (
+    <Container>
+      {steps.map((step) => (
         <>
-          <RationaleContainer screenWidth={screenWidth}>
-            <RationaleTitle>{item.rationale}</RationaleTitle>
-            <Statement screenWidth={screenWidth}>
-              {item.description}
-            </Statement>
-          </RationaleContainer>
-          <LineBreak />
+          <StepContainer>
+            {step.stepIcon}
+            <StepDetails>
+              <Title>{step.stepTitle}</Title>
+              <DescriptionList>
+                {step.description}
+              </DescriptionList>
+            </StepDetails>
+          </StepContainer>
         </>
       ))}
-    </ApproachContainer>
+    </Container>
   );
 };
 
-Approach.propTypes = {
+StepByStep.propTypes = {
   screenWidth: PropTypes.number.isRequired,
-};
+}
 
-export default Approach;
+export default StepByStep;
