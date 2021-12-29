@@ -21,7 +21,7 @@ const ResponseList = styled.ul`
 `;
 
 const ResponseListItem = styled.li`
-  list-style-type: '~  ';
+  list-style-type: '➤  ';
   font-size: .8em;
   margin-bottom: 2%;
 `;
@@ -49,17 +49,17 @@ const FAQList = () => {
     <ResponseListItem>
       <u>Cash Flow:</u>
       {' '}
-      All properties that we invest in provide sufficient cash flow to cover unpredictable but inevitable expenses.
+      Our approach maximizes cash flow to cover the unpredictable but inevitable expenses and yield a healthy cash-on-cash return for investors.
     </ResponseListItem>
     <ResponseListItem>
       <u>Economies of Scale:</u>
       {' '}
-      Relative to smaller rental property investments, per unit-operational costs are lower, which improve margins.
+      Relative to smaller rental property investments, per unit-operational costs are lower.
     </ResponseListItem>
     <ResponseListItem>
       <u>Forced Appreciation:</u>
       {' '}
-      Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drive commercial real estate valuation.
+      Given we select apartments that are underperforming, we are able to force appreciation through improvements in net operating income, which directly drives commercial real estate valuation.
     </ResponseListItem>
     <ResponseListItem>
       <u>Lower Vacancy Risk:</u>
@@ -69,12 +69,12 @@ const FAQList = () => {
     <ResponseListItem>
       <u>Macro Trends:</u>
       {' '}
-      The U.S. is increasingly becoming a nation of renters, as fewer and fewer people are committing to purchasing their own homes.
+      The U.S. is increasingly becoming a nation of renters, as fewer and fewer people are committing to purchasing their own homes. Furthermore, increasing population density and changing demographic preferences are accelerating tenant absorption into larger apartments.
     </ResponseListItem>
     <ResponseListItem>
       <u>Market Resilience:</u>
       {' '}
-      A roof to live under is a basic human need, unlike other forms of commercial real estate. Moreover, during recessions people often downsize into less-expensive apartments. This  is why Sunrise Realty Investments targets quality apartments with value-add potential versus turn-key, new-build apartments.
+      A roof to live under is a basic human need, unlike other forms of commercial real estate. Moreover, during recessions people often downsize into less-expensive apartments. Sunrise Realty Investments targets quality apartments with value-add potential versus turn-key, new-build apartments.
     </ResponseListItem>
     <ResponseListItem>
       <u>Tax Benefits:</u>
@@ -101,7 +101,7 @@ const FAQList = () => {
       question: 'What fees do I pay in order to invest with Sunrise Realty Investments?',
       answer:
   <Response>
-    Many syndicators charge a slew of fees to investors, including refinancing fees and capital transaction fees; however, we do not believe this model aligns with our mission. At Sunrise Realty Investments, we value alignment of interests, and therefore we only charge a nominal, market-parity acquisition fee and asset management fee.
+    Many syndicators charge a slew of fees to investors, including refinancing fees and capital transaction fees; however, we do not believe this model aligns with our mission. At Sunrise Realty Investments, we value alignment of interests, and therefore we only charge a nominal, market-parity acquisition fee and asset management fee
     {' '}
     <u>after</u>
     {' '}
@@ -112,7 +112,7 @@ const FAQList = () => {
       question: 'What are the biggest risks I should be aware of? How do you mitigate these risks?',
       answer:
   <Response>
-    With any deal, the biggest risk factors are the market, the deal, and the team. We mitigate these risks through a disciplined, robust approach to market selection and apartment selection. Additionally, we always use a conservative underwriting process to value properties based on known performance metrics versus future, expected performance metrics and complement that with a rigorous, months-long due diligence period. We always incorporate a healthy operating and contingency budget to cover any unexpected dips in occupancy, lower than projected rent premiums, or unexpected costs. Furthermore, our team further mitigates risk by regularly seeking counsel from mentors with decades of apartment investing experience.
+    With any deal, the biggest risk factors are the market, the deal, and the team. We mitigate these risks through a disciplined, robust approach to market selection and apartment selection. Additionally, we always use a conservative underwriting process to value properties based on known performance metrics versus future, expected performance metrics` and complement that with a rigorous, months-long due diligence period. We always incorporate a healthy operating and contingency budget to cover any unexpected dips in occupancy, lower than projected rent premiums, or unexpected costs. Our team further mitigates risk by regularly seeking counsel from mentors with decades of apartment investing experience.
   </Response>,
     },
     {

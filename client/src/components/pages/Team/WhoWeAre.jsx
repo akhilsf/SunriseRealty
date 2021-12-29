@@ -28,7 +28,7 @@ const WhoWeAre = () => (
   <WhoContainer>
     <Title>WHO WE ARE</Title>
     <Statement>
-      We are a group of a seasoned professionals with a track record of qualifying investments through detailed market analysis and financial modeling and meeting returns targets with commercial real estate
+      We are a group of a seasoned professionals with a track record of qualifying investments through detailed market analysis and financial modeling and meeting returns targets with commercial real estate.
     </Statement>
   </WhoContainer>
 );

@@ -26,9 +26,9 @@ const Statement = styled.p`
 
 const Subheader = () => (
   <ApproachContainer>
-    <Title>OUR APPROACH</Title>
+    <Title>APPROACH</Title>
     <Statement>
-      We acquire underperforming apartment communities in growing markets to provide investors cash flow, equity growth, and tax benefits
+      We acquire underperforming apartment communities in growing markets to provide investors cash flow, equity growth, and tax benefits.
     </Statement>
   </ApproachContainer>
 );

@@ -14,8 +14,11 @@ const LeftSideContainer = styled.h1`
   padding: 5%;
 `;
 
-const Questionnaire = styled.form`
+const GoogleFormContainer = styled.div`
   background-color: rgba(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  height: 1100px;
   padding: 5%;
 `;
 
@@ -56,31 +59,9 @@ const Form = ({ screenWidth }) => (
         Send us a note!
       </p>
     </LeftSideContainer>
-    <Questionnaire style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
-      <InputField>
-        <label htmlFor="nameContact" style={{ display: 'block' }}>FULL NAME</label>
-        <input type="text" name="nameContact" id="nameContact" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="emailContact" style={{ display: 'block' }}>EMAIL ADDRESS</label>
-        <input type="text" name="emailContact" id="emailContact" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="phoneContact" style={{ display: 'block' }}>PHONE NUMBER</label>
-        <input type="text" name="phoneContact" id="phoneContact" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="subject" style={{ display: 'block' }}>SUBJECT</label>
-        <input type="text" name="subject" id="subject" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="message" style={{ display: 'block' }}>MESSAGE</label>
-        <textarea name="message" id="message" rows="4" cols="50" required />
-      </InputField>
-      <InputField>
-        <Submit type="submit" value="SUBMIT" />
-      </InputField>
-    </Questionnaire>
+    <GoogleFormContainer>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKpGwUAq8oakuVVSqJ09tTKHfyrxzeZ6ASnU659ZhDZq5ohQ/viewform?embedded=true" width="640" height="1500" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+    </GoogleFormContainer>
   </Container>
 );
 

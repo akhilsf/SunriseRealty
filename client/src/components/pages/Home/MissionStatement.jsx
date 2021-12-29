@@ -7,7 +7,7 @@ const MissionContainer = styled.div`
   background-color: rgb(245, 245, 245);
   flex-direction: column;
   justify-content: center;
-  padding: 5%;
+  padding: min(10vw, 100px);
   align-items: center;
   height: auto;
 `;
@@ -19,7 +19,7 @@ const Title = styled.h1`
 
 const Statement = styled.p`
   margin: 25px 0 50px 0;
-  font-size: clamp(15px, 4vw, 30px);
+  font-size: min(5vw, 30px);
   text-align: center;
 `;
 
