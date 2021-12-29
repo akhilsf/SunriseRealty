@@ -92,6 +92,9 @@ const Header = ({ screenWidth }) => {
       closeHamburger();
       setHamburgerOpen(false);
     }
+
+    window.scrollTo(0, 0);
+
     let htmlCollection = document.getElementsByClassName('link')
     let linksArray = Array.prototype.slice.call(htmlCollection);
 

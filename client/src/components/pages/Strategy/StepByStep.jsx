@@ -46,7 +46,7 @@ const Title = styled.h1`
 const DescriptionList = styled.ul``;
 
 const Description = styled.li`
-  list-style-type: '~ ';
+  list-style-type: '➤  ';
   font-size: clamp(15px, 4vw, 30px);
   margin-bottom: 2%;
   color: white;

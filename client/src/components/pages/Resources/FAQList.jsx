@@ -21,7 +21,7 @@ const ResponseList = styled.ul`
 `;
 
 const ResponseListItem = styled.li`
-  list-style-type: '~  ';
+  list-style-type: '➤  ';
   font-size: .8em;
   margin-bottom: 2%;
 `;

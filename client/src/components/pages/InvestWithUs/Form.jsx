@@ -14,8 +14,11 @@ const LeftSideContainer = styled.h1`
   padding: 5%;
 `;
 
-const Questionnaire = styled.form`
+const GoogleFormContainer = styled.div`
   background-color: rgba(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  height: 1100px;
   padding: 5%;
 `;
 
@@ -56,74 +59,9 @@ const Form = ({ screenWidth }) => (
         Fill out our form and we&apos;ll get back to you!
       </p>
     </LeftSideContainer>
-    <Questionnaire style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
-      <InputField>
-        <label htmlFor="nameInvestWUs" style={{ display: 'block' }}>FULL NAME</label>
-        <input type="text" name="nameInvestWUs" id="nameInvestWUs" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="emailInvestWUs" style={{ display: 'block' }}>EMAIL ADDRESS</label>
-        <input type="text" name="emailInvestWUs" id="emailInvestWUs" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="phoneInvestWUs" style={{ display: 'block' }}>PHONE NUMBER</label>
-        <input type="text" name="phoneInvestWUs" id="phoneInvestWUs" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="street" style={{ display: 'block' }}>STREET ADDRESS</label>
-        <input type="text" name="street" id="street" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="city" style={{ display: 'block' }}>CITY</label>
-        <input type="text" name="city" id="city" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="state" style={{ display: 'block' }}>STATE</label>
-        <input type="text" name="state" id="state" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="zip" style={{ display: 'block' }}>ZIP / POSTAL CODE</label>
-        <input type="text" name="zip" id="zip" required />
-      </InputField>
-      <InputField>
-        <label htmlFor="investor" style={{ display: 'block' }}>ARE YOU AN ACCREDITED INVESTOR?</label>
-        <select name="investor" id="investor" defaultValue="--" required>
-          <option value="--" disabled hidden>--</option>
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-      </InputField>
-      <InputField>
-        <label htmlFor="citizen" style={{ display: 'block' }}>ARE YOU A US CITIZEN?</label>
-        <select name="citizen" id="citizen" defaultValue="--" required>
-          <option value="--" disabled hidden>--</option>
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-      </InputField>
-      <InputField>
-        <label htmlFor="citizen" style={{ display: 'block' }}>HOW MUCH ARE YOU WILLING TO PASSIVELY INVEST?</label>
-        <select name="citizen" id="citizen" defaultValue="--" required>
-          <option value="--" disabled hidden>--</option>
-          <option value="1">25,000 - 50,000</option>
-          <option value="2">50,000 - 100,000</option>
-          <option value="3">100,000 - 250,000</option>
-          <option value="4">250,000 - 500,000</option>
-          <option value="5">500,000 - 1,000,000</option>
-          <option value="6">500,000 - 1,000,000</option>
-          <option value="7">1,000,000 - 5,000,000</option>
-          <option value="8">5,000,000 - 20,000,000</option>
-          <option value="9">20,000,000+</option>
-        </select>
-      </InputField>
-      <InputField>
-        <label htmlFor="goals" style={{ display: 'block' }}>WHAT ARE YOUR INVESTMENT GOALS?</label>
-        <textarea name="goals" id="goals" rows="4" cols="50" required />
-      </InputField>
-      <InputField>
-        <Submit type="submit" value="SUBMIT" />
-      </InputField>
-    </Questionnaire>
+    <GoogleFormContainer style={{ width: screenWidth < 1000 ? undefined : '50%' }}>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKpGwUAq8oakuVVSqJ09tTKHfyrxzeZ6ASnU659ZhDZq5ohQ/viewform?embedded=true" width="640" height="1500" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+    </GoogleFormContainer>
   </Container>
 );
 
