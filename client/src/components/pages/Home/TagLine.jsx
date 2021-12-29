@@ -7,15 +7,13 @@ const Container = styled.div``;
 const TagLineContainer = styled.div`
   display: flex;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.6);
   `;
 
   const Pic = styled.div`
   background-image: url("assets/homePhoto.jpeg");
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   object-fit: cover;
   z-index: -1;
   position: absolute;
@@ -55,6 +53,8 @@ const TagLine = ({ screenWidth }) => {
         </Text>
       </TagLineContainer>
       <Pic style={{
+          backgroundPosition: screenWidth < widthThreshold ? 'bottom' : 'center',
+          backgroundCover: screenWidth < widthThreshold ? 'cover' : undefined,
           height: screenWidth < widthThreshold ? '50vh' : '80vh',
         }}
       />

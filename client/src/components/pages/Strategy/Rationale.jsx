@@ -9,7 +9,6 @@ const ApproachContainer = styled.div`
   justify-content: center;
   padding: 2%;
   align-items: center;
-  // border-bottom: 1px solid rgba(200,200,200);
   height: auto;
 `;
 
