@@ -14,7 +14,6 @@ const TagLineContainer = styled.div`
   background-image: url("assets/homePhoto.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  object-fit: cover;
   z-index: -1;
   position: absolute;
   top: 15vh;
@@ -54,7 +53,7 @@ const TagLine = ({ screenWidth }) => {
       </TagLineContainer>
       <Pic style={{
           backgroundPosition: screenWidth < widthThreshold ? 'bottom' : 'center',
-          backgroundCover: screenWidth < widthThreshold ? 'cover' : undefined,
+          backgroundSize: screenWidth < widthThreshold ? undefined : 'cover',
           height: screenWidth < widthThreshold ? '50vh' : '80vh',
         }}
       />
