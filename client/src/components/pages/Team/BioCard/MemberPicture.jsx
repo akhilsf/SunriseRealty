@@ -13,8 +13,8 @@ const MemberPicture = ({ shortID }) => (
     src={`assets/${shortID}.jpeg`}
     alt="Member Picture"
     style={{
-      width: 'clamp(250px, 50vw, 400px)',
-      height: 'clamp(250px, 50vw, 400px)',
+      width: 'clamp(200px, 40vw, 350px)',
+      height: 'clamp(200px, 40vw, 350px)',
     }}
   />
 );

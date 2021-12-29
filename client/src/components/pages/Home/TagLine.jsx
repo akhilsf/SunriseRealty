@@ -5,8 +5,8 @@ import styled from 'styled-components';
 const Container = styled.div``;
 
 const TagLineContainer = styled.div`
+  display: flex;
   box-sizing: border-box;
-  flex-direction: column;
   background-color: rgb(0, 0, 0, 0.5);
   `;
 
@@ -22,14 +22,11 @@ const TagLineContainer = styled.div`
   top: 15vh;
   left: 0;
   width: 100%;
-  height: 80vh;
 `;
 
   const Text = styled.p`
   display: flex;
-  width: 95%;
   text-align: center;
-  justify-content: end;
   padding-top: 5%;
   color: #f5f3f2;
   font-size: clamp(30px, 4vw, 60px);
@@ -42,10 +39,13 @@ const TagLine = ({ screenWidth }) => {
   return (
     <Container >
       <TagLineContainer style={{
-        height: screenWidth < widthThreshold ? '50vh' : '80vh'
+        height: screenWidth < widthThreshold ? '50vh' : '80vh',
+        alignItems: screenWidth < widthThreshold ? 'center' : undefined,
       }}
       >
         <Text style={{
+          justifyContent: screenWidth < widthThreshold ? 'center' : 'end',
+          width: screenWidth < widthThreshold ? '100%' : '95%',
         }}
         >
           Time-tested asset class.

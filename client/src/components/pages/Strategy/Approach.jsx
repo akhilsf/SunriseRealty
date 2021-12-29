@@ -12,7 +12,7 @@ import { Sell } from '@styled-icons/material-twotone/Sell'
 
 const Container = styled.main`
   background-color: #4d6374;
-  padding: 2%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,9 +24,10 @@ const StepContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 70px;
+  margin: 1%;
   height: auto;
   color: white;
+  font-size: clamp(15px, 2vw, 24px);
 `;
 
 const StepDetails = styled.div`
@@ -41,13 +42,14 @@ const Title = styled.h1`
   text-align: center;
   color: white;
   margin: 1em 0 1em 0;
+  font-size: 1.5em;
 `;
 
 const DescriptionList = styled.ul``;
 
 const Description = styled.li`
   list-style-type: '➤  ';
-  font-size: clamp(15px, 4vw, 30px);
+  font-size: 1em;
   margin-bottom: 2%;
   color: white;
 `;
@@ -75,11 +77,11 @@ const StepByStep = ({ screenWidth }) => {
 
   useEffect(() => {
     if (screenWidth < 500) {
-      setIconSize(100);
+      setIconSize(75);
     } else if (screenWidth < 1000) {
-      setIconSize(150);
+      setIconSize(100);
     } else {
-      setIconSize(250);
+      setIconSize(150);
     }
   }, [screenWidth])
 

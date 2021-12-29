@@ -38,6 +38,12 @@ const Statement = styled.p`
   text-align: center;
 `;
 
+const ExpandButton = styled.p`
+  height: 50px;
+  line-height: 100px;
+  font-size: clamp(12px, 1vw, 15px);
+`
+
 const Strategy = ({ screenWidth }) =>{
   const [isApproachOpen, setIsApproachOpen] = useState(false);
   const [isRationaleOpen, setIsRationaleOpen] = useState(false);
@@ -62,8 +68,9 @@ const Strategy = ({ screenWidth }) =>{
       >
         <Title>APPROACH</Title>
         <Statement>
-          We acquire underperforming apartment communities in growing markets to provide investors cash flow, equity growth, and tax benefits.
+          We acquire apartment communities with value-add potential in growing markets to provide investors cash flow, equity growth, and tax benefits.
         </Statement>
+        <ExpandButton>{isApproachOpen ? 'Click to Collapse' : 'Click to Expand'}</ExpandButton>
       </SectionContainer>
       {isApproachOpen ? <Approach screenWidth={screenWidth} /> : null}
       <SectionContainer onClick={() => handleSectionClick('Rationale')}
@@ -71,7 +78,8 @@ const Strategy = ({ screenWidth }) =>{
           backgroundColor: isRationaleOpen ? 'rgb(220, 220, 220)' : undefined,
         }}
       >
-        <Title>WHY UNDERPEFORMING APARTMENT COMMUNITIES?</Title>
+        <Title>WHY APARTMENT COMMUNITIES WITH VALUE-ADD POTENTIAL?</Title>
+      <ExpandButton>{isRationaleOpen ? 'Click to Collapse' : 'Click to Expand'}</ExpandButton>
       </SectionContainer>
       {isRationaleOpen ? <Rationale screenWidth={screenWidth} /> : null}
       <Footer />

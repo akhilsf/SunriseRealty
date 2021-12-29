@@ -14,13 +14,12 @@ const MissionContainer = styled.div`
 
 const Title = styled.h1`
   display: block;
-  // color: #748a8b;
   color: white;
 `;
 
 const Statement = styled.p`
   margin: 25px 0 50px 0;
-  font-size: min(5vw, 30px);
+  font-size: clamp(15px, 2vw, 30px);
   text-align: center;
   color: white;
 `;
@@ -37,7 +36,6 @@ const About = styled.a`
   color: white;
 
   &:hover {
-    // background-color: #4A5859;
     background-color: white;
     color: #748a8b;
   }

@@ -12,12 +12,12 @@ const Name = styled.h2`
   text-transform: uppercase;
   line-height: 100%;
   color: white;
-  font-size: 3em;
 `;
 
 const Title = styled.h4`
   color: white;
   font-weight: 400;
+  font-size: 1.2em;
   font-style: italic;
 `;
 
@@ -33,6 +33,7 @@ const BioDetails = ({
     <Name style={{
       textAlign: screenWidth < 1000 ? 'center' : undefined,
       marginTop: screenWidth < 1000 ? '5%' : undefined,
+      fontSize: screenWidth < 1000 ? '2em' : '3em',
     }}
     >
       {name}

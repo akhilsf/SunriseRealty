@@ -18,7 +18,6 @@ const LineBreak = styled.span`
   display: block;
   width: 100%;
   height: 1px;
-  margin: clamp(10px, 5%, 20px);
   background-color: rgba(200, 200, 200);
 `;
 

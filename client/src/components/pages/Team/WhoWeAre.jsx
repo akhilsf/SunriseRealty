@@ -19,7 +19,8 @@ const Title = styled.h1`
 `;
 
 const Statement = styled.p`
-  font-size: clamp(15px, 4vw, 30px);
+  font-size: clamp(15px, 2vw, 30px);
+  margin-top: 2%;
   text-align: center;
 `;
 

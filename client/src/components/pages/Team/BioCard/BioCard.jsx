@@ -7,7 +7,7 @@ import BioDetails from './BioDetails';
 const Container = styled.div`
   width: 100%;
   display: flex;
-  margin: 70px;
+  margin: 5%;
   justify-content: center;
   height: auto;
 `;
