@@ -5,7 +5,8 @@ import styled from 'styled-components';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 
 const Name = styled.h2`
@@ -27,10 +28,11 @@ const Bio = styled.p`
 `;
 
 const BioDetails = ({
-  name, title, bio, screenWidth,
+  shortID, name, title, bio, screenWidth,
 }) => (
   <Container>
     <Name style={{
+      width: '100%',
       textAlign: screenWidth < 1000 ? 'center' : undefined,
       marginTop: screenWidth < 1000 ? '5%' : undefined,
       fontSize: screenWidth < 1000 ? '2em' : '3em',

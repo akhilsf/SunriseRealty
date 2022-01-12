@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   margin: 5%;
-  justify-content: center;
+  // justify-content: center;
   height: auto;
 `;
 
@@ -18,10 +18,11 @@ const BioCard = ({
   <Container style={{
     flexDirection: screenWidth < 1000 ? 'column' : undefined,
     alignItems: screenWidth < 1000 ? 'center' : undefined,
+    justifyContent: shortID ? 'center' : undefined,
   }}
   >
-    <MemberPicture shortID={shortID} screenWidth={screenWidth} />
-    <BioDetails name={name} title={title} bio={bio} screenWidth={screenWidth} />
+    {shortID ? <MemberPicture shortID={shortID} screenWidth={screenWidth} /> : null}
+    <BioDetails shortID={shortID} name={name} title={title} bio={bio} screenWidth={screenWidth} />
   </Container>
 );
 

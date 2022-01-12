@@ -7,17 +7,25 @@ const LogoPic = styled.img`
   height: auto;
 `;
 
-const Logo = ({ screenWidth }) => {
+const Logo = ({ screenWidth, isFooter }) => {
   const [logoWidth, setLogoWidth] = useState(() => {});
 
   useEffect(() => {
+    let width;
+
     if (screenWidth < 550) {
-      setLogoWidth(200)
+      width = 200;
     } else if (screenWidth < 750) {
-      setLogoWidth(250);
+      width = 250;
     } else {
-      setLogoWidth(300);
+      width = 300
     }
+    if (isFooter) {
+      width = width * .60;
+    }
+
+    setLogoWidth(width);
+
   }, [screenWidth]);
 
   return (

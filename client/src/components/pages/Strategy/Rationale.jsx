@@ -85,13 +85,13 @@ const Approach = ({ screenWidth }) => {
     <ApproachContainer>
       {rationaleList.map((item) => (
         <>
+          {item.rationale !== "Cash Flow" ? <LineBreak /> : null}
           <RationaleContainer screenWidth={screenWidth}>
             <RationaleTitle>{item.rationale}</RationaleTitle>
             <Statement screenWidth={screenWidth}>
               {item.description}
             </Statement>
           </RationaleContainer>
-          <LineBreak />
         </>
       ))}
     </ApproachContainer>

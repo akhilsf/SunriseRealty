@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <FooterContainer>
-      <Logo screenWidth={screenWidth} />
+      <Logo screenWidth={screenWidth} isFooter={true} />
       <LinksContainer>
         <Link href="/home">HOME</Link>
         <Link href="/team">THE TEAM</Link>
