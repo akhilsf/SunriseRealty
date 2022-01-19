@@ -60,7 +60,7 @@ const Form = ({ screenWidth }) => (
       </p>
       <br/>
       <p style={{ textAlign: 'center', fontWeight: '200', fontSize: 'clamp(10px, 1vw, 15px)' }}>
-        (If form does not load, send use note at <a href="mailto:anish@sunriserealty.io" style={{ all: 'revert', }}>anish@sunriserealty.io</a>)
+        (If form does not load, send us note at <a href="mailto:anish@sunriserealty.io" style={{ all: 'revert', }}>anish@sunriserealty.io</a>)
       </p>
     </LeftSideContainer>
     <GoogleFormContainer>
